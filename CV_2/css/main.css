@@ -1,0 +1,1027 @@
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: roboto;
+    font-size: 1.3em;
+    font-weight: 300;
+    line-height: 1.7em;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: black;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: black;
+}
+
+#sidebar ul.components {
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px 0px;
+    font-size: 1.1em;
+    display: block;
+    border-bottom: 1px solid #ffffff;
+}
+#sidebar ul li a:hover {
+    color: #0078D7;
+    background: #fff;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+}
+
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+    content: '\e259';
+    display: block;
+    position: absolute;
+    right: 20px;
+    font-family: 'Glyphicons Halflings';
+    font-size: 0.6em;
+}
+a[aria-expanded="true"]::before {
+    content: '\e260';
+}
+
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+a.article, a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+    width: calc(100% - 250px);
+    padding: 40px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-bottom: 0px;
+}
+#content.active {
+    width: 100%;
+}
+
+/* -------- BEGIN DIVIDER -------*/
+    .or-spacer {
+    width: 76%;
+    margin: 0 auto;
+    margin-top: 40px;
+    }
+    
+    .or-spacer .mask {
+        overflow: hidden;
+        height: 20px;
+    }
+    
+    .or-spacer .mask:after {
+        content: '';
+        display: block;
+        margin: -25px auto 0;
+        width: 100%;
+        height: 25px;
+        border-radius: 125px / 12px;
+        box-shadow: 0 0 8px black;
+    }
+    
+    .or-spacer span {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 100%;
+        margin-bottom: -25px;
+        left: 50%;
+        margin-left: -25px;
+        border-radius: 100%;
+        box-shadow: 0 2px 4px #999;
+        background: white;
+    }
+    
+    .or-spacer span i {
+        position: absolute;
+        top: 4px;
+        bottom: 4px;
+        left: 4px;
+        right: 4px;
+        border-radius: 100%;
+        border: 1px dashed #aaa;
+        text-align: center;
+        line-height: 40px;
+        font-style: normal;
+        color: #999;
+    }
+    .secDivi {
+        display: none;
+    }
+    .leftCont .secDivi {
+        display: none;
+    }
+    .leftCont .secDivi {
+        display: none;
+    }
+
+
+/* -------- END DIVIDER -------*/
+
+/* ---------------------------------------------------
+    BEGIN MY STYLE
+----------------------------------------------------- */
+
+
+/* -------- BEGIN STYLE TIMELINE -------*/
+.bgTimeV{
+    background: url(../img/v-line.png) repeat-y center;
+    width: 25%;
+    height: 98%;
+    position: absolute;
+    margin-top: 20px;
+}
+.timelineV{
+    width: 61%;
+    height: 44px;
+    float: right;
+    border-bottom: 10px solid #0078D7;
+}
+
+/* -------- END STYLE TIMELINE -------*/
+
+
+
+/* ------- BEGIN SIDE-LEFT MENU -------------------------------*/
+#sidebar .sidebar-header h3{
+    border: 3px solid white;
+    padding: 17px 0px;
+    border-radius: 13px;   
+} 
+#sidebar .sidebar-header p{
+    
+}
+.fix-sideMenu{
+    padding: 13px 25px;
+    margin-bottom: 9px;
+    padding-bottom: 21px;
+}
+div.iconMenu{
+    width: 20%;
+    float: left;
+}
+div.contentMenu{
+    width: 80%;
+    float: left;
+}
+/* -------- END SIDE-LEFT MENU ----------------------------------*/
+
+
+/* ------- BEGIN SIDE-LEFT MENU -------------------------------*/
+
+
+
+
+	/* -------- BEGIN TOP NAVIGATION (>769px , HIDE) -------*/
+.navbar-default .navbar-brand {
+    color: #0078D7;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #0078D7;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #0078D7;
+    font-style: italic;
+}
+    /* -------- END TOP NAVIGATION (>769px , HIDE) -------*/
+
+        /* -------- BEGIN ABOUT -------*/
+.SecAbout{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.divAbout h1{
+    border-bottom: 2px solid #0078D7;
+    padding-bottom: 20px;
+}
+.divAbout h4{
+    padding-top: 10px;
+}
+.divAbout span:first-child{
+
+}
+.divAbout span:last:child{
+
+}
+.ImgCV img{
+    border-radius: 100%;
+    border: 10px solid #0078D7;
+    display: block;
+    margin:0 auto;
+}
+p.go_top{
+    width: 36px;
+    height: 36px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    font-size: 30px;
+    line-height: 100%;
+    text-align: center;
+    z-index: 90;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white
+}
+        /* -------- END ABOUT -------*/
+
+
+        /* -------- BEGIN PROFILE -------*/
+.secProfile{
+    padding-top: 20px;
+}
+.secProfile hr{
+    border-top: 10px solid #0078D7;
+    width: 132%;
+    position: relative;
+    left: -52px;
+    top: 11px;
+}
+.secProfile h2{
+    font-size: 35px;
+    font-weight: 600;
+    color: #0078D7;
+    font-family: roboto;
+    letter-spacing: 5px;
+}
+.secProfile h3{
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: #2196f3;
+    font-weight: 200;   
+}
+
+.secProfile a{
+    font-size: 35px;
+    margin-right: 30px;
+    color: #2196f3;
+    font-weight: 300;
+    line-height: 1.7em;
+}
+.secProfile p{
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+
+        /* -------- END PROFILE -------*/
+
+
+        /* -------- BEGIN EDUCATION -------*/
+.secEdu{
+    padding-top: 30px;
+}
+.secEdu hr{
+    border-top: 10px solid #0078D7;
+    width: 132%;
+    position: relative;
+    left: -52px;
+    top: 11px;
+}
+.secEdu h2{
+    font-size: 35px;
+    font-weight: 600;
+    color: #0078D7;
+    font-family: roboto;
+    letter-spacing: 5px;
+}
+.secEdu h3{
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: #0078D7;
+    font-weight: 200;
+}
+.secEdu .col-md-9 i.fa{
+    font-size: 25px;
+    margin-right: 10px;
+    color: #2196f3;
+    font-weight: 300;
+    line-height: 1.7em;
+}
+.secEdu p.titEdu{
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+        /* -------- END EDUCATION -------*/
+
+
+
+        /* -------- BEGIN WORK EXPERIENCE -------*/
+.secWork{
+    padding-top: 30px;
+}
+
+.secWork hr{
+    border-top: 10px solid #0078D7;
+    width: 132%;
+    position: relative;
+    left: -52px;
+    top: 11px;
+}
+
+.secWork h2{
+    font-size: 35px;
+    font-weight: 600;
+    color: #0078D7;
+    font-family: roboto;
+    letter-spacing: 5px;
+}
+
+.secWork h3{
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: #0078D7;
+    font-weight: 200;
+}
+
+.secWork .col-md-9 i.fa{
+    font-size: 25px;
+    margin-right: 10px;
+    color: #2196f3;
+    font-weight: 300;
+    line-height: 1.7em;
+}
+
+.secWork p.titWork{
+    font-style: italic;
+    font-weight: 600;
+}
+        /* -------- END WORK EXPERIENCE -------*/
+
+
+        /* -------- BENGIN SKILL -------*/
+.secSkill{
+    padding-top: 30px;
+}
+
+.secSkill hr{
+    border-top: 10px solid #0078D7;
+    width: 132%;
+    position: relative;
+    left: -52px;
+    top: 11px;
+}
+
+.secSkill h2{
+    font-size: 35px;
+    font-weight: 600;
+    color: #0078D7;
+    font-family: roboto;
+    letter-spacing: 5px;
+}
+
+.secSkill h3{
+    border-bottom: 2px solid #eee;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: #0078D7;
+    font-weight: 200;
+}
+.secSkill .progress{
+    padding-left: 0px;
+    margin-top: 5px;
+}
+.secSkill .rowSkl{
+    padding-top: 10px;
+}
+.secSkill h3 i.fa{
+    margin-right: 10px;
+}
+        /* -------- END SKILL -------*/
+
+
+        /* -------- BENGIN INTERESTS -------*/
+.secInter{
+    padding-top: 30px;
+}
+.secInter hr{
+    border-top: 10px solid #0078D7;
+    width: 132%;
+    position: relative;
+    left: -52px;
+    top: 11px;
+}
+
+.secInter h2{
+    font-size: 35px;
+    font-weight: 600;
+    color: #0078D7;
+    font-family: roboto;
+    letter-spacing: 5px;
+}
+
+.secInter h3{
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: #0078D7;
+    font-weight: 200;
+}
+
+.secInter .col-md-9 i.fa{
+    font-size: 25px;
+    margin-right: 10px;
+    color: #2196f3;
+    font-weight: 300;
+    line-height: 1.7em;
+}
+
+.secInter p.titInter{
+    font-style: italic;
+    font-weight: 600;
+}
+        /* -------- END INTERESTS -------*/
+
+
+
+        /* -------- BEGIN PORTFOLIO -------*/
+.secPort{
+    padding-top: 30px;
+}
+
+.secPort hr{
+    border-top: 10px solid #0078D7;
+    width: 132%;
+    position: relative;
+    left: -52px;
+    top: 11px;
+}
+
+.secPort h2{
+    font-size: 35px;
+    font-weight: 600;
+    color: #0078D7;
+    font-family: roboto;
+    letter-spacing: 5px;
+}
+
+.secPort h3{
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: #0078D7;
+    font-weight: 200;
+}
+
+.secPort .col-md-9 i.fa{
+    font-size: 25px;
+    margin-right: 10px;
+    color: #2196f3;
+    font-weight: 300;
+    line-height: 1.7em;
+}
+
+
+            /* -------- BEGIN MIXITUP -------*/
+/* Controls
+---------------------------------------------------------------------- */
+
+.controls {
+    padding: 1rem;
+    background: #333;
+    font-size: 0.1px;
+}
+
+.control {
+    position: relative;
+    display: inline-block;
+    width: 2.7rem;
+    height: 2.7rem;
+    background: #444;
+    font-size: 0.1px;
+    color: white;
+    transition: background 150ms;
+}
+
+.control:hover {
+    background: #3f3f3f;
+}
+
+.control[data-filter]:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: calc(50% - 6px);
+    left: calc(50% - 6px);
+    border: 2px solid currentColor;
+    border-radius: 2px;
+    background: currentColor;
+    transition: background-color 150ms, border-color 150ms;
+}
+
+.control[data-sort]:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    top: calc(50% - 6px);
+    left: calc(50% - 6px);
+    transform:  translateY(1px) rotate(45deg);
+}
+
+.control[data-sort*=":desc"]:after {
+    transform:  translateY(-4px) rotate(-135deg);
+}
+
+.mixitup-control-active {
+    background: #393939;
+}
+
+.mixitup-control-active[data-filter]:after {
+    background: transparent;
+}
+
+.control:first-of-type {
+    border-radius: 3px 0 0 3px;
+}
+
+.control:last-of-type {
+    border-radius: 0 3px 3px 0;
+}
+
+.control[data-filter] + .control[data-sort] {
+    margin-left: .75rem;
+}
+
+.control[data-filter=".green"] {
+    color: #91e6c7;
+}
+
+.control[data-filter=".blue"] {
+    color: #5ecdde;
+}
+
+.control[data-filter=".pink"] {
+    color: #d595aa;
+}
+
+.control[data-filter="none"] {
+    color: #2f2f2f;
+}
+
+
+/* Grid Items
+---------------------------------------------------------------------- */
+
+.item,
+.gap {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.item {
+    background: #fff;
+    border-radius: 2px;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.item:before {
+    display: inline-block;
+}
+
+            /* -------- END MIXITUP -------*/
+
+
+            /* -------- BEGIN MY STYLE MIXITUP -------*/
+.controls {
+    font-size: 25px;
+    background: none;
+    text-align: center;
+}
+.mixitup-control-active {
+     background: none;
+    color: #0078D7;
+}
+.filter{
+    cursor: pointer;
+}
+.secPort .thumbnail{
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+    padding: 0;
+    margin: 0;
+    box-shadow: -1px 3px 5px #888888;
+}
+                /* -------- END MY STYLE MIXITUP -------*/
+        /* -------- END PORTFOLIO -------*/
+
+
+
+
+            /* -------- BEGIN CONTACT -------*/
+.secCont{
+    padding-top: 30px;
+}
+.secCont hr{
+    border-top: 10px solid #0078D7;
+    width: 132%;
+    position: relative;
+    left: -52px;
+    top: 11px;
+}
+
+.secCont h2{
+    font-size: 35px;
+    font-weight: 600;
+    color: #0078D7;
+    font-family: roboto;
+    letter-spacing: 5px;
+}
+
+.secCont h3{
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 15px;
+    color: #0078D7;
+    font-weight: 200;
+    margin-top: 0px;
+}
+h3.titCont {
+    padding-top: 30px;
+}
+
+.secCont .col-md-9 i.fa{
+    font-size: 25px;
+    margin-right: 10px;
+    color: #2196f3;
+    font-weight: 300;
+    line-height: 1.7em;
+}
+
+.secCont p.titInter{
+    font-style: italic;
+    font-weight: 600;
+}
+.secCont p{
+    padding-bottom: 15px;
+}
+.rowCont {
+    padding-top: 20px ;
+}
+
+
+                /* -------- BEGIN FORM -------*/
+ 
+.formCont textarea{
+    width: 100%;
+    padding: 15px;
+    height: 154px;
+    background-color: white;
+    border: none;
+    border: 1px solid #a9a9a9;
+    border-radius: 12px;
+    font-size: 15px;
+
+}
+.formCont input{
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    background-color: white;
+    font-size: 15px;
+    border:none;
+    border: 1px solid #a9a9a9;
+}
+.formCont input[type="button"]{
+    color: #0078D7;
+    padding: 14px 36px;
+    font-weight: 600;
+    margin-top: 10px;
+    box-shadow: 3px 3px 1px grey;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+::-webkit-input-placeholder , ::-webkit-textarea-placeholder{ /* Chrome/Opera/Safari */
+  color: #0078D7;
+  font-style: italic;
+}
+::-moz-placeholder , ::-webkit-textarea-placeholder{ /* Firefox 19+ */
+  color: #0078D7;
+  font-style: italic;
+}
+:-ms-input-placeholder , ::-webkit-textarea-placeholder{ /* IE 10+ */
+  color: #0078D7;
+  font-style: italic;
+}
+:-moz-placeholder , ::-webkit-textarea-placeholder{ /* Firefox 18- */
+  color: #0078D7;
+  font-style: italic;
+}
+.leftCont{
+    padding-left: 0px;
+}
+.rightCont{
+
+}
+.endForm h2{
+    font-size: 50px;
+}
+                /* -------- BEGIN ADRESS-------*/
+h3.fixAddress{
+    width: 20%;
+}
+                /* -------- END ADRESS-------*/
+
+            /* -------- END CONTACT-------*/
+
+
+
+
+
+
+
+    /* --------END CONTENT -------*/
+
+
+/* ---------------------------------------------------
+    END MY STYLE
+----------------------------------------------------- */
+
+
+
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+
+
+/* ----------- MEDIA MIXITUP --------*/
+
+/* Grid Breakpoints
+--------------- */
+
+/* 2 Columns */
+
+@media screen and (min-width: 541px) {
+    .item,
+    .gap {
+        width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
+    }
+}
+
+/* 3 Columns */
+
+@media screen and (min-width: 961px) {
+    .item,
+    .gap {
+        width: calc(100%/3 - (((3 - 1) * 1rem) / 3));
+    }
+}
+
+/* 4 Columns */
+
+@media screen and (min-width: 1281px) {
+    .item,
+    .gap {
+        width: calc(100%/4 - (((4 - 1) * 1rem) / 4));
+    }
+    .item{
+        margin-right: 4px;
+    }
+}
+
+
+
+/* ----------- MEDIA MENU --------*/
+
+@media (min-width: 769px){
+	.navbar{
+		display: none;
+	}
+	#sidebar.active {
+    	margin-left: 0px;
+	}
+	#content.active {
+		width: calc(100% - 250px)
+	}
+}
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #content {
+        width: 100%;
+    }
+    #content.active {
+        width: calc(100% - 250px);
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+/* ----------- MEDIA TIMELINE --------*/
+@media screen and (max-width: 991px){
+    .bgTimeV{
+        display: none;
+    }
+    .timelineV{
+        display: none;    
+    }
+    .secProfile h2 , .secEdu h2 , .secWork h2 , 
+    .secSkill h2 , .secInter h2 , .secCont h2 , 
+    .secPort h2{
+        text-align: center
+    }
+    .secProfile h2 i, .secEdu h2 i, .secWork h2 i, 
+    .secSkill h2 i, .secInter h2 i, .secCont h2 i, 
+    .secPort h2 i{
+        display:none;
+    }
+    .secDivi {
+        display: block;
+    }
+    .secCont h3{
+        margin-top: 20px;
+    }
+    .secCont {
+    padding-top: 10px;
+    }
+    .SecAbout {
+        padding-top: 60px ;
+    }
+}
+/* ----------- MEDIA CONTENT --------*/
+@media screen and (max-width: 991px){
+    h3.fixAddress {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 358px){
+    #content {
+        padding: 40px 10px 0px 10px;
+    }
+}
+
+/* ---------------------------------------------------
+    END MEDIAQUERIES
+----------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------
+    BEGIN FIX ANIMATION
+----------------------------------------------------- */
+
+/* -----------  MENU --------*/
+nav.animated {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+/* ----------- ABOUT --------*/
+.SecAbout h4.bounceInRight{
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;   
+}
+.SecAbout p.bounceInRight{
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;   
+}
+.secProfile p.slideInRight{
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;    
+}
+
+/* ---------------------------------------------------
+    END FIX ANIMATION
+----------------------------------------------------- */
+.customHTML {
+    
+    bottom: 0px;
+    right: 0;
+    /* background: #f2f2f2; */
+    width: 400px;
+    height: 100%;
+    display: block;
+   }
+
+.fancybox-slide--iframe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.fancybox-slide--iframe .fancybox-content {
+    display: flex;
+    width  : 893px;
+    height : 344px;
+    max-width  : 80%;
+    max-height : 80%;
+    margin: 0;
+    width: 100%;
+    display: flex 
+}
+

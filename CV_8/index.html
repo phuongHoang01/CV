@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	<link href="fancybox/dist/jquery.fancybox.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="isotope.pkgd.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		function changeCss() {
+			if (this.scrollY > document.querySelector("#header").clientHeight) {
+				$('#menu').css('background-color', '#000');
+				$('#menu').css('margin-top', '0px');
+				$('#menu .nav-link').css('color', '#fff');
+			}
+			else {
+				$('#menu').css('background-color', 'transparent');
+				$('#menu').css('margin-top', '25px');
+				$('#menu .nav-link').css('color', '#fff');
+			}
+		}
+		window.addEventListener("scroll", changeCss, false);
+		$(document).ready(function () {
+			$('#portfolio a').fancybox();
+		});
+	</script>
+</head>
+
+<body>
+	<script type="text/javascript" src="wow.min.js"></script>
+	<script type="text/javascript">
+		new WOW().init();
+	</script>
+	<nav id="menu" class="navbar navbar-expand-sm navbar-dark fixed-top bg-faded">
+		<div class="container">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggler="collapse"
+				data-target="#nav-content">
+				<span class="navbar-toggler-icon"></span></button>
+			<a href="#" class="navbar-brand" id="logo">Wellcome to My CV</a>
+			<div class="collapse navbar-collapse" id="nav-content">
+				<ul class="navbar-nav text-uppercase ml-auto" id="menu1">
+					<li class="nav-item">
+						<a class="nav-link" href="#info">about</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#skill">resume</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#portfolio">portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">CONTACT</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div id="header" class="container-fluid">
+		<div class="container jumbotron text-center">
+			<div id="text-header" class="zoomInUp wow">
+				<h1>I'M <span id="_HoTen_">TRAN THANH VU</span></h1>
+				<h3 id="_ChucVu_">Design & Web Developer Front-End Full Stack</h3>
+			</div>
+		</div>
+	</div>
+	<!-- #services.container>(.row>.col-sm-12>h2.text-center{SERVICES}+p.text-center{Lorem ipsum dolor it amet})+(.row>(.col-sm-4>(.ico.text-center>i)+h2.text-center+p.text-center)*3)-->
+
+	<div id="info" class="container fadeInUp wow">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="text-center">
+					<h1>ABOUT ME</h1>
+					<span>Some thing about me</span>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="content">
+			<div class="container">
+				<div class="col-sm-12">
+					<h4 id="_HoTen_">TRAN THANH VU</h4>
+					<h5 id="_ChucVu_">Webdesigner & Web Developer from VietNam</h5>
+					<p id="_SoLuocBanThan_">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quos eius
+						suscipit repellat nemo, enim nobis inventore animi hic autem sequi mollitia, ab non atque. Sed
+						dignissimos nostrum architecto temporibus.</p>
+				</div>
+				<button class="btn btn-primary">Download Resume</button>
+				<img id="_Avatar_" class="rounded-circle" src="img/hinhdaidien.jpg">
+			</div>
+		</div>
+	</div>
+	<div id="BG-port">
+		<div id="skill" class="container fadeInUp wow">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<h2>RESUME</h2>
+					<p>My info....</p>
+				</div>
+			</div>
+			<div id="skill-content">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="category resume_category resume_category_1 first even">
+
+							<div class="category_header resume_category_header">
+
+								<h3 class="category_title" style="background: #373737"><span class="category_title_icon"
+										style="background-color:#373737">
+										<i class="fa fa-university" aria-hidden="true"></i>
+									</span>Education</h3>
+							</div>
+							<div class="category_body resume_category_body">
+								<article class="post resume_post resume_post_1 first even" id="_HocVan_">
+
+								
+
+								</article>
+							</div> <!-- .category_body -->
+							<div class="category_header resume_category_header">
+
+								<h3 class="category_title" style="background: #373737"><span class="category_title_icon"
+										style="background-color:#373737">
+										<i class="fa fa-briefcase" aria-hidden="true"></i>
+									</span>EMPLOYMENT</h3>
+							</div>
+							<div class="category_body resume_category_body">
+								<article class="post resume_post resume_post_1 first even" id="_KinhNghiem_">
+									<div class="post_header resume_post_header">
+										<i class="fa fa-check-circle" aria-hidden="true"></i>
+										<span id="_TenCongTy_" class="post_subtitle">GONG CHA VIET NAM</span>
+										<div class="resume_period">
+
+											<span id="_ThoiGian_" class="day period_from">(04.2016 - PRESENT)</span>
+
+										</div>
+
+									</div>
+									<div class="post_body resume_post_body">
+										<p id="_MoTa_">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+											eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+											veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+											commodo consequat.</p>
+									</div>
+
+								</article>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-2"></div>
+					<div class="col-sm-4">
+						<div class="category_header resume_category_header" id="_KiNang_">
+
+							<h3 class="category_title" style="background: #373737"><span class="category_title_icon"
+									style="background-color:#373737">
+									<i class="fa fa-star-half-o" aria-hidden="true"></i>
+								</span>PROGRAMMING SKILLS</h3>
+						</div>
+
+						<div class="category_header resume_category_header" id="_NgonNgu_">
+
+							<h3 class="category_title" style="background: #373737"><span class="category_title_icon"
+									style="background-color:#373737">
+									<i class="fa fa-star-half-o" aria-hidden="true"></i>
+								</span>LANGUAGE</h3>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div>
+		<div id="portfolio" class="container fadeInUp wow">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<h2>PORTFOLIO</h2>
+					<p>Somthing I do.....</p>
+				</div>
+				<!-- <div class="portfolioFilter col-sm-12">
+						<ul>
+							<li><a href="#" data-filter="*" class="current">All</a></li>
+							<li><a href="#" data-filter=".photos" class="current">Photo</a></li>
+							<li><a href="#" data-filter=".branding" class="current">Brangding</a></li>
+							<li><a href="#" data-filter=".illustration" class="current">Ilusstration</a></li>
+						</ul>
+					</div> -->
+			</div>
+			<div class="row" id="_DuAn_">
+				
+			</div>
+
+		</div>
+	</div>
+	<div id="BG-port">
+		<div id="contact" class="container zoomInUp wow">
+			<div class="tittle_contact row">
+				<div class="col-sm-12 text-center">
+					<h1>CONTACT ME</h1>
+					<span>My contact info....</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="category_header resume_category_header">
+
+						<h3 class="category_title" style="background: #373737"><span class="category_title_icon"
+								style="background-color:#373737">
+								<i class="fa fa-info" aria-hidden="true"></i>
+							</span>Contact Info </h3>
+					</div>
+					<ul>
+						<li>Email: <span id="_Email_">vu261194@gmail.com</span></li>
+						<li>Phone: <span ID="_SoDT_">+123 456 789</span></li>
+					</ul>
+				</div>
+				<div class="col-sm-8">
+					<div class="category_header resume_category_header">
+
+						<h3 class="category_title" style="background: #373737"><span class="category_title_icon"
+								style="background-color:#373737">
+								<i class="fa fa-envelope" aria-hidden="true"></i>
+							</span>Let's keep in touch</h3>
+					</div>
+					<form action="" id="contactform">
+						<p>
+							<label for="name">Your Name</label>
+							<input type="text" name="name" class="input">
+						</p>
+						<p>
+							<label for="email">Your Email</label>
+							<input type="text" name="email" class="input">
+						</p>
+						<p>
+							<label for="message">Your Message</label>
+							<textarea name="message" cols="88" rows="6" class="textarea"></textarea>
+						</p>
+						<input type="submit" name="submit" value="Send your message" class="button transition">
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div>
+		<h4 class="copyright">© 2017 TRAN THANH VU. <span class="hidden-phone">All rights reserved.</span></h4>
+	</div>
+	<!-- FANCY BOX -->
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="fancybox/dist/jquery.fancybox.min.js"></script>
+	<script src="../src/data.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+
+</html>

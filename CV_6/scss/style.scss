@@ -1,0 +1,555 @@
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Montserrat', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+ul{list-style:none;padding:0;}
+$color: #FF9800;
+$color-text:#656c6d;
+$color-contact:#000;
+
+
+.fa-arrow-circle-up{
+	color: $color;
+	}
+#header {
+	background-image: url(../img/banner.jpg);
+	/* background-size: cover; */
+	/* background-repeat: no-repeat; */
+	/* background-attachment: scroll; */
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100vh;
+	min-height: 720px;
+	display: table;
+	position: relative;
+	text-align: center;
+	/* background: url(../img/intro-bg.jpg) no-repeat center bottom; */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	/* background-position: center center; */
+}
+
+#menu{
+	background-color: transparent;
+	border:none;
+	margin-top:25px;
+	.navbar-brand{
+		color: $color;
+		letter-spacing: 1px;
+		font-size: 1.75em;
+		font-weight: bold;
+		font-style: italic;
+		font-family: 'Kaushan Script', cursive;
+	}
+	.nav-link{
+		color: #fff;
+	}
+}
+.navbar-nav li a{
+    transition: background .3s ease-in-out;
+}
+.navbar-nav li a:hover, .navbar-nav li a.active{
+	color: $color !important;
+}
+
+
+#header{
+	background-image: url(../img/banner.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100vh;
+	min-height: 720px;
+	display: table;
+	position: relative;
+	text-align: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	.header_overlay{
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    background: #111111;
+	    opacity: .85;
+	}
+	.jumbotron{
+		background-color: transparent;
+		color: #fff;
+		padding-top: 300px;
+		padding-bottom: 300px;
+    	display: table-cell;
+	    vertical-align: middle;
+	    text-align: center;
+	    -webkit-transform: translateY(-2.1rem);
+	    -ms-transform: translateY(-2.1rem);
+	    transform: translateY(-2.1rem);
+	    color: #ffffff;
+	}
+}
+.jumbotron{
+	h1{
+		text-transform: uppercase;
+	}
+}
+@mixin transform-tilt(){
+	$tilt: rotate(360deg);
+
+	-webkit-transform: $tilt; /*ch*/
+	-ms-transform: $tilt; /*IE*/
+	transform: $tilt;
+
+}
+
+$social_padding:10px 15px;
+$social_border: 1px solid #fed136;
+$social_color: #fff;
+$social_margin-righ: 5px;
+.banner_social i {
+	padding: $social_padding;
+	border: $social_border;
+	color: $social_color;
+	margin-right: $social_margin-righ;
+	transition: transform 2s;
+	&:hover{
+		@include transform-tilt;
+	}
+}
+
+.icon-scroll {
+    width: 40px;
+    height: 70px;
+    margin-left: -20px;
+    top: 85%;
+    margin-top: -35px;
+    border-radius: 25px !important;
+    box-shadow: inset 0 0 0 1px #fff;
+}
+.icon-scroll,
+.icon-scroll:before {
+    position: absolute;
+    left: 50%;
+}
+
+.icon-scroll:before {
+    background-color: #fff;
+    content: '';
+    width: 8px;
+    height: 8px;
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 4px !important;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(46px);
+    }
+}
+
+@mixin title{
+	text-transform: uppercase;
+    font-weight: 700;
+}
+
+/*About*/
+$padding: 100px 0;
+#about{
+	padding: $padding;
+	h1{
+	    @include title;
+	}
+}
+.info{
+	p{
+		color: $color-text;
+	}
+	ul{
+		display: inline-block;
+		margin-bottom: 50px;
+	}
+	ul li{
+		width: 50%;
+	    float: left;
+	    position: relative;
+	    font-size: 18px;
+	    line-height: 32px;
+	    color: #333;
+	}
+	ul li::before{
+	    content: "\f00c";
+	    font-family: fontawesome;
+	    margin-right: 10px;
+	    color: $color;
+	}
+	.btn{
+		border-color:$color;
+		color: #333;
+		margin-right: 20px;
+		&:hover{
+			background-color:$color;
+			color: #fff;
+		}
+		i{
+			margin-right: 7px;
+			font-size: 0.8em;
+		}
+
+	}
+	.btn-down-cv{
+		background-color:$color;
+		color:#fff;
+	}
+
+}
+.photo{
+	margin-bottom: 30px;
+	img{
+		border-radius: 50%;
+	}
+}
+.personal_detail{
+	ul li{
+		border-bottom: 1px solid #bfb7b7;
+		padding: 5px 0;
+		margin-bottom: 10px;
+	}
+}
+
+/*WORK HISTORY*/
+#work{
+	h1{
+	    @include title;
+	}
+}
+.resume::before {
+	left:50%;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    margin-left: -1.5px;
+    background-color: #bfb7b7;
+}
+@mixin resume-panel($float, $text-align){
+	padding: 10px 20px 20px 100px;
+	float: $float;
+	position: relative;
+	width: 41%;
+    padding: 0 20px 0 20px;
+    text-align: $text-align;
+}
+
+
+.resume {
+    position: relative;
+    padding: 0;
+    list-style: none;
+    margin-top: 40px;
+    li{
+    	position:relative;
+    	margin-bottom: 100px;
+    	min-height: 150px;
+    }
+    li::after{
+    	clear: both;
+    }
+    li .resume-img{
+    	left: 50%;
+    	position:absolute;
+    	border-radius:50%;
+    	margin-left: -75px;
+    }
+    li .resume-img h4{
+    	margin-top: 30px;
+    	color:#fff;
+    }
+    li .resume-panel{
+    	@include resume-panel(left,right);
+    }
+    .resume-heading h4{
+    	margin-top: 0;
+	    text-transform: uppercase;
+	    font-size: 16px;
+    }
+    .resume-heading h4.subheading{
+    	color: $color;
+    	font-size: 1.2em;
+    }
+    .resume-panel .resume-body p{
+    	color: $color-text;
+    }
+
+    li.resume-inverted>.resume-panel{
+    	@include resume-panel(right,left);
+    }
+}
+.resume-img{
+	width:150px;
+	height:150px;
+	background-color:$color;
+    border: 1px solid $color;
+}
+.resume>li:before, .resume>li:after {
+    content: " ";
+    display: table;
+}
+
+/*SKILL*/
+#skill{
+	background: #1a1e23;
+	color: #fff;
+	h1{
+	    @include title;
+	    padding: 100px 0;
+	}
+	span{
+		float: right;
+	}
+	.skill-progress {
+	    padding-bottom:100px;
+	}
+	.progress{
+		margin-bottom: 20px;
+	}
+
+}
+.skill-progress .progress {
+    height: 10px;
+    background: #333;
+}
+
+@mixin progress-bar($animationName) {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: $color;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    animation: $animationName 2s 1 forwards;
+}
+.progress-bar-html{
+	@include progress-bar(progress-html);
+}
+.progress-bar-css{
+	@include progress-bar(progress-css);
+}
+.progress-bar-javascript{
+	@include progress-bar(progress-javascript);
+}
+.progress-bar-bootstrap{
+	@include progress-bar(progress-bootstrap);
+}
+.progress-bar-php{
+	@include progress-bar(progress-php);
+}
+.progress-bar-mysql{
+	@include progress-bar(progress-mysql);
+}
+
+@mixin progress($width){
+	width: $width;
+}
+
+@keyframes progress-html { 
+    from { }
+
+    to {@include progress(98%);}
+}
+@keyframes progress-css { 
+    from { }
+
+    to {@include progress(95%);}
+}
+@keyframes progress-javascript { 
+    from { }
+
+    to {@include progress(90%);}
+}
+
+@keyframes progress-bootstrap { 
+    from { }
+
+    to {@include progress(94%);}
+}
+@keyframes progress-php { 
+    from { }
+
+    to {@include progress(75%);}
+}
+@keyframes progress-mysql { 
+    from { }
+
+    to {@include progress(80%);}
+}
+
+
+@mixin transform-tilt(){
+	$tilt: rotate(360deg);
+
+	-webkit-transform: $tilt; /*ch*/
+	-ms-transform: $tilt; /*IE*/
+	transform: $tilt;
+
+}
+
+/*Portfolio*/
+#portfolio{
+	padding-top:100px;
+	h1{
+	    @include title;
+	}
+	.categories {
+	    padding-bottom: 30px;
+	    text-align: center;
+	    margin-top: 50px;
+		.btn{
+			color: #fff;
+			cursor: pointer;
+			border: #000;
+			&:hover{
+				background-color:#000;
+				border: #000;
+			};
+		}
+		.btn-warning{
+			background-color: $color;
+		}
+	}
+}
+.mix img{
+  -webkit-transition: all 0.5s linear;
+          transition: all 0.5s linear;
+}
+.mix img:hover{
+	transform: scale(1.1);
+}
+
+/*Contact*/
+#contact{    
+	background-color: #f5f5f5;
+	padding-bottom: 50px;
+	h1{
+	    @include title;
+	    padding-top: 100px;
+	    padding-bottom:50px;
+	}
+}
+.group {
+  position: relative;
+  margin: 15px 0;
+  p{
+  	color: $color-contact;
+  }
+}
+input,
+textarea {
+  background: none;
+  color: #c6c6c6;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #c6c6c6;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+input:focus ~ label, input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+  top: -14px;
+  font-size: 12px;
+  color: $color-contact;
+}
+input:focus ~ .bar:before,
+textarea:focus ~ .bar:before {
+  width: 100%;
+}
+
+input[type="password"] {
+  letter-spacing: 0.3em;
+}
+label {
+  color: $color-contact;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  -webkit-transition: 300ms ease all;
+  transition: 300ms ease all;
+}
+.bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.bar:before {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 0px;
+  position: absolute;
+  background: $color;
+  -webkit-transition: 300ms ease all;
+  transition: 300ms ease all;
+  left: 0%;
+}
+.btn.btn-submit {
+  background: $color;
+  color: #fff;
+  width: 30%;
+  cursor: pointer;
+  font-weight: bold;
+}
+.box_address{
+	overflow: hidden;
+}
+.box_address p:first-child{
+	font-weight: bold;
+	width: 16%;
+	float: left;
+	color:$color-contact;
+}
+.box_address p:last-child{
+	color: $color-contact;
+	margin-left: 30px;
+	float: left;
+}
+.group > p{
+	font-weight: bold;
+	font-size: 18px;
+}
+
+/*Footer*/
+#footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    h5{
+    	font-size: 14px;
+    }
+}
