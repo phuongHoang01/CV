@@ -6,6 +6,8 @@ for (let i = 0; i < hocVan.length; i++) {
 }
 
 
+console.log(data)
+
 
 // Kinh Nghiem
 let kinhghiems = data.DanhSachKinhNghiem;
@@ -25,27 +27,27 @@ for (let i = 0; i < duAn.length; i++) {
 
 // Kỹ năng mền
 let kyNangMem = data.KyNangMem;
-for (let i = 0; i < kyNangMem.length; i++) {
-    $("#_KyNangMem_").append(template.kyNangMem(kyNangMem[i]));
-
+let kiNang = data.KyNang
+// for (let i = 0; i < kyNangMem.length; i++) {
+//     $("#_KyNangMem_").append(template.kyNangMem(kyNangMem[i]));
+// }
+// Kĩ năng
+let sumPro = ""
+for(let i = 0; i < data.KyNang.ThanhThao.length; i++){
+    i === 0 ? sumPro += data.KyNang.ThanhThao[i].Ten : sumPro = sumPro + ", " + data.KyNang.ThanhThao[i].Ten
 }
-
-// Thong tin
-
-$("._HoTen_").html(` ${data.ThongTinCaNhan.HoTen}`);
-$("._Email_").html(` ${data.ThongTinCaNhan.Email}`);
-$("._SoDT_").html(` ${data.ThongTinCaNhan.SoDT}`);
-
-// Ki Nang
-let kiNang = data.KyNang;
-let sumArr = [];
+$("#_KiNang_ .Proficient").append(`<span>${sumPro}</span>`);
+// Hieu Biet
+let sumFa = ""
+for(let i = 0; i < data.KyNang.HieuBiet.length; i++){
+    i === 0 ? sumFa += data.KyNang.HieuBiet[i].Ten : sumFa = sumFa + ", " + data.KyNang.HieuBiet[i].Ten
+}
+$("#_KiNang_ .Familiar").append(`<span>${sumFa}</span>`);
+// Ngoai Ngu
 let arrNgonNgu = [];
 let arrNgonNguOK = [];
 let map = new Map();
 for (let [key, value] of Object.entries(kiNang)) {
-    if (key !== "NgoaiNgu") {
-        sumArr = [...sumArr, ...value]
-    }
     if (key === "NgoaiNgu") {
         arrNgonNgu = [...value];
     }
@@ -60,29 +62,45 @@ for (let i = 0; i < arrNgonNgu.length; i++) {
         }
     } else {
         map.set(arrNgonNgu[i].Ten, arrNgonNgu[i]);
-        let res = { ...arrNgonNgu[i] };
+        let res = {...arrNgonNgu[i] };
         let save = res.TrinhDo
         res.TrinhDo = [];
         res.TrinhDo.push(save);
         arrNgonNguOK.push(res);
     }
 }
+console.log(arrNgonNguOK)
 let sumNgoaiNgu = "";
-let i = 0
 for (let val of arrNgonNguOK) {
     let sumText = ""
+    let i = 0
     for (let val2 of val.TrinhDo) {
-        sumText += `<li><p id="_TenKiNang_">${val2}</p></li>`
+        sumText = i === 0 ? sumText + `<span class='bangcap'>${val2}</span>` : sumText + ', ' + `<span class='bangcap'>${val2}</span>`
+        i++
     }
-    sumNgoaiNgu += template.ngonNgu(val.Ten, sumText)
+    sumNgoaiNgu += `
+    <div style="margin-left:20px">
+        <p>${val.Ten}:</p>${sumText}
+    </div>
+    `
+}
+$("#_KiNang_ .Languages").append(`<span>${sumNgoaiNgu}</span>`);
+
+for(let val of data.KyNangMem){
+    $("#_KyNangMem_").append(template.kyNangMem(val));
 }
 
 
-for (let val of sumArr) {
-    $("._KiNang_").append(template.kiNang(val.Ten, val.TrinhDo, i + 1 === sumArr.length ? true : false));
-    i++
-}
-$("._KiNang_").append(sumNgoaiNgu)
+
+
+
+
+
+// Thong tin
+
+$("._HoTen_").html(` ${data.ThongTinCaNhan.HoTen}`);
+$("._Email_").html(` ${data.ThongTinCaNhan.Email}`);
+$("._SoDT_").html(` ${data.ThongTinCaNhan.SoDT}`);
 
 
 function ChooseTemplate(template) {
@@ -92,14 +110,18 @@ function ChooseTemplate(template) {
             return {
                 hocVan: (ThoiGian, TenTruong, MoTaHocVan, ChuyenNganh, GPA) => `
                 <h2>${TenTruong}</h2>
-            <h3  style="margin-bottom: 20px;">${ChuyenNganh}<strong> — ${GPA} GPA</strong> </h3>
+                <h3 style="margin-bottom: 20px;">
+                    ${ChuyenNganh}
+                    <strong> — ${GPA} GPA</strong> 
+
+                </h3>
 		`,
 
                 kinhNghiem: (TenCongTy, ChucVu, MoTa, ThoiGian) => `
                 <div class="job">
                 <h2>${TenCongTy}</h2>
                 <h3>${ChucVu}</h3>
-                <h4>${ThoiGian}</h4>
+                <h4>${ThoiGian.split("-")[0] + ' - ' + ThoiGian.split("-")[1]}</h4>
                 <p>${MoTa}</p>
             </div>
         `,
@@ -115,14 +137,14 @@ function ChooseTemplate(template) {
                     `<div class="job">
                     <h2>${TieuDe}</h2>
                     <h3>${ViTri}</h3>
-                    <h4>${ThoiGian}</h4>
                     <p>${MoTa}</p>
                 </div>`,
 
                 kyNangMem: (MoTa) =>
-                    `<p class="enlarge">
-                    ${MoTa}
-            </p><br/>`,
+                    `<li>
+                        <h3>${MoTa}</h3>
+                    </li>
+                    `,
 
             ngonNgu(ten, sumText) {
                 return `
