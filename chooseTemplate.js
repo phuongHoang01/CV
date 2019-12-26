@@ -378,7 +378,7 @@ function ChooseTemplate(template) {
                                               `;
                     return customIframe(i, customContent);
                 }
-            };
+            };     
         default:
             break;
     }
