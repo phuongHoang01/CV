@@ -1,76 +1,129 @@
-
-let data = {
+const data = {
+    "step": 7,
     "TieuDe": "My Resume",
     "MaNguoiDung": "",
     "ThongTinCaNhan": {
-        "Urls": "[{\"type\":\"FaceBook\",\"url\":\"https://www.facebook.com/profile.php?id=100004423514404\"},{\"type\":\"LinkedIn\",\"url\":\"linkedin.com/nguyentruc\"},{\"type\":\"GitHub\",\"url\":\"github.com/nguyentruc\"}]",
-        "HoTen": "nguyen truc",
         "Email": "truc@gmail.com",
+        "HoTen": "nguyen truc",
         "SoDT": "0909015594",
         "Avatar": "",
+        "Urls": "[{\"type\":\"FaceBook\",\"url\":\"facebook.com/nguyentruc\"},{\"type\":\"LinkedIn\",\"url\":\"linkedin.com/nguyentruc\"},{\"type\":\"GitHub\",\"url\":\"github.com/nguyentruc\"}]",
+        "ImageFile": ""
     },
     "KyNang": {
-        "ThanhThao": "[{\"Ten\":\"C#\",\"TrinhDo\":\"70\"},{\"Ten\":\"Javascript\",\"TrinhDo\":\"80\"},{\"Ten\":\"TSQL\",\"TrinhDo\":\"70\"}]",
-        "HieuBiet": "[{\"Ten\":\"NetCore\",\"TrinhDo\":\"70\"},{\"Ten\":\"Angular 6\",\"TrinhDo\":\"80\"},{\"Ten\":\"Bootstrap 4\",\"TrinhDo\":\"80\"},{\"Ten\":\"SCSS\",\"TrinhDo\":\"90\"}]",
-        "NgoaiNgu": "[{\"Ten\":\"English\",\"TrinhDo\":\"IELTS: 7.0\"},{\"Ten\":\"English\",\"TrinhDo\":\"TOEIC: 750\"},{\"Ten\":\"Japanese\",\"TrinhDo\":\"N1\"},{\"Ten\":\"Japanese\",\"TrinhDo\":\"A1\"}]"
+        "ThanhThao": [
+            {
+                "Ten": "C#",
+                "TrinhDo": 80
+            },
+            {
+                "Ten": "Javascript",
+                "TrinhDo": 90
+            },
+            {
+                "Ten": ".NetCore",
+                "TrinhDo": 80
+            },
+            {
+                "Ten": "ReactJS",
+                "TrinhDo": 80
+            }
+        ],
+        "HieuBiet": [
+            {
+                "Ten": "Bootstrap 4",
+                "TrinhDo": 60
+            },
+            {
+                "Ten": "VuJS",
+                "TrinhDo": 40
+            },
+            {
+                "Ten": "mongoDB",
+                "TrinhDo": 40
+            }
+        ],
+        "NgoaiNgu": [
+            {
+                "Ten": "English",
+                "TrinhDo": "IELTS: 7.0"
+            },
+            {
+                "Ten": "English",
+                "TrinhDo": "TOEIC: 750"
+            },
+            {
+                "Ten": "Japanese",
+                "TrinhDo": "N1"
+            },
+            {
+                "Ten": "Japanese",
+                "TrinhDo": "A1"
+            }
+        ]
     },
+    "KyNangMem": [
+        "Ganh team lien minh",
+        "Solo 1 vs 5 lien minh",
+        "Chui dong doi"
+    ],
     "DanhSachDuAn": [
         {
             "TieuDe": "Project 1",
             "ViTri": "FrontEnd",
-            "MoTa": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-            "KyNang": "Bootstrap 4,SCSS,JQUERY",
-            "LinkYoutube": "https://www.youtube.com/watch?v=jXlnSvwxKxE&list=RDjXlnSvwxKxE",
-            "LinkHinhAnh":  "http://thuthuatphanmem.vn/uploads/2018/05/18/hinh-nen-may-tinh-hd-la-phong-xanh-dep_024422517.jpg"
-
+            "MoTa": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            "KyNang": "Netcore,,.NetCore,,Angular 4,Bootstrap 4,SCSS,Javascript",
+            "LinkYoutube": "",
+            "LinkHinhAnh": ""
         },
         {
             "TieuDe": "Project 2",
             "ViTri": "FullStack",
-            "MoTa": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-            "KyNang": "NetCore,Jquery,Javascript,TSQL",
-            "LinkYoutube": "https://www.youtube.com/watch?v=oaTJU1G-T6c"
+            "MoTa": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            "KyNang": ".Netcore,C#,Javascript,ReactJS",
+            "LinkYoutube": "",
+            "LinkHinhAnh": ""
         }
     ],
     "DanhSachHocVan": [
         {
             "TenTruong": "FPT",
             "ChuyenNganh": "IT",
-            "BangCap": "VIP IT",
+            "BangCap": "VIP OK",
             "ThoiGian": "01/2011-01/2014",
             "GPA": "3.0",
-            "MoTa": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            "MoTa": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
         },
         {
             "TenTruong": "Cybersoft Academy",
             "ChuyenNganh": "Web Developer",
-            "BangCap": "Master Web",
-            "ThoiGian": "01/2014-01/2015",
+            "BangCap": "Master Frontend",
+            "ThoiGian": "01/2015-01/2016",
             "GPA": "4.0",
-            "MoTa": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            "MoTa": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
         }
     ],
     "DanhSachKinhNghiem": [
         {
             "TenCongTy": "FPT",
-            "ChucVu": "FrontEnd",
-            "MoTa": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "ChucVu": "FrontEnd Developer",
+            "MoTa": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
             "ThoiGian": "01/2016-01/2017"
         },
         {
             "TenCongTy": "Cybersoft",
-            "ChucVu": "FullStack",
-            "MoTa": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "ChucVu": "FullStack Developer",
+            "MoTa": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
             "ThoiGian": "01/2017-01/2018"
         },
         {
             "TenCongTy": "Nasa",
             "ChucVu": "FullJob",
-            "MoTa": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "MoTa": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
             "ThoiGian": "01/2018-01/2019"
         }
     ],
-    "TemplateUrl": 1,
-    "DiemCV": "",
-    "NgonNgu": "EN",
+    "TemplateUrl": 2,
+    "DiemCV": 0,
+    "NgonNgu": "en"
 }

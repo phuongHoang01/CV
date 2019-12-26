@@ -2,6 +2,23 @@ function ChooseTemplate(template) {
     switch (template) {
         case 2:
             return {
+                kyNangMemAppend() {
+                    return `
+                        <div class="col-md-9 col-md-offset-3" style="margin-top:30px">
+                            <h3 class="animated zoomInUp" style="margin-top:0px">Soft Skills</h3>
+                            <p class="animated slideInRight SoftSkill">
+                               
+                            </p>
+                        </div>
+                    `
+                },
+                kyNangMemRender(value){
+                    return `
+                        <ul style="list-style-type:none; padding:0">
+                            ${value}
+                        </ul>
+                    `
+                },
                 hocVan(thoigian, TenTruong, MoTaHocVan, Degree, GPA, Specialized) {
                     return `
 							<div class="row" style="margin-bottom:20px">
@@ -35,7 +52,7 @@ function ChooseTemplate(template) {
                     `;
                 },
                 kiNang(TenKiNang, TrinhDoKiNang) {
-                    `
+                    return `
 						<div class="col-md-9 col-md-offset-3">
                				<div class="row rowSkl">
                     			<div class="col-md-4">
@@ -116,6 +133,23 @@ function ChooseTemplate(template) {
 
         case 1:
             return {
+                kyNangMemAppend() {
+                    return `
+                        <div class="col-md-6" style="margin-top:30px">
+                            <h3 class="animated zoomInUp" style="margin-top:0px">Soft Skills</h3>
+                            <p class="animated slideInRight SoftSkill">
+                               
+                            </p>
+                        </div>
+                    `
+                },
+                kyNangMemRender(value){
+                    return `
+                        <ul style="list-style-type:none; padding:0">
+                            ${value}
+                        </ul>
+                    `
+                },
                 hocVan(ThoiGian, TenTruong, MoTaHocVan, ChuyenNganh, index) {
                     if (index % 2 === 0) {
                         return `
@@ -246,7 +280,9 @@ function ChooseTemplate(template) {
                       `;
 
                 },
-                kiNang(TenKiNang, TrinhDoKiNang) {
+                kiNang(TenKiNang, TrinhDoKiNang, checkLast) {
+                    if(!checkLast)
+                    {
                     return `
                     <div class="col-md-6 title_skill">
                     <div class="skill">
@@ -261,10 +297,29 @@ function ChooseTemplate(template) {
                       </ul>
                     </div>
                   </div>`;
+                    }
+                    return `
+                    <div class="col-md-6 title_skill">
+                    <div class="skill">
+                      <ul>
+                      <li class="skill_col1">${TenKiNang}
+                      <div class="progress fix-progress">
+                         <div class="progress-bar wow fix-bar" role="progressbar" aria-valuenow=${TrinhDoKiNang} aria-valuemin="0" aria-valuemax="100" style="width:${TrinhDoKiNang}%">
+                           <span class="pct">${TrinhDoKiNang}</span>
+                         </div>
+                     </div>
+                   </li>
+                      </ul>
+                    </div>
+                  </div>
+                    <div class="col-md-12"></div>
+                  `
+                    
+                  ;
                 },
                 ngonNgu(ten, sumText) {
                     return `
-                            <div class="col-md-12" style="margin-top:30px">
+                            <div class="col-md-6" style="margin-top:30px">
                             <h3 class="animated zoomInUp" style="margin-top:0px">${ten}</h3>
                             <p class="animated slideInRight Specialized" style="font-weight:600">
                                 <ul style="list-style-type:none; padding:0">

@@ -4,6 +4,8 @@ let kinhghiems = data.DanhSachKinhNghiem;
 let kiNang = data.KyNang;
 let duAn = data.DanhSachDuAn;
 
+console.log(data);
+
 function RunCV() {
     renderThongTinCaNhan();
     renderMangXaHoi();
@@ -12,8 +14,6 @@ function RunCV() {
     renderKiNang();
     renderDuAn();
 }
-
-
 
 function renderThongTinCaNhan() {
     $("._HoTen_").html(` ${data.ThongTinCaNhan.HoTen}`);
@@ -63,14 +63,12 @@ function renderKiNang() {
     let arrNgonNgu = [];
     let arrNgonNguOK = [];
     let map = new Map();
-    let oldIndex = -1;
     for (let [key, value] of Object.entries(kiNang)) {
-        console.log(key)
         if (key !== "NgoaiNgu") {
-            sumArr = [...sumArr, ...JSON.parse(value)];
+            sumArr = [...sumArr,...value]
         }
         if (key === "NgoaiNgu") {
-            arrNgonNgu = [...JSON.parse(value)];
+            arrNgonNgu = [...value];
         }
     }
     for (let i = 0; i < arrNgonNgu.length; i++) {
@@ -91,6 +89,7 @@ function renderKiNang() {
         }
     }
     let sumNgoaiNgu = "";
+    let i = 0
     for (let val of arrNgonNguOK) {
         let sumText = ""
         for (let val2 of val.TrinhDo) {
@@ -101,9 +100,17 @@ function renderKiNang() {
 
 
     for (let val of sumArr) {
-        $("._KiNang_").append(template.kiNang(val.Ten, val.TrinhDo));
+        $("._KiNang_").append(template.kiNang(val.Ten, val.TrinhDo, i + 1 === sumArr.length ? true : false));
+        i++
     }
     $("._KiNang_").append(sumNgoaiNgu)
+
+    // Ky nang mem
+    $("._KiNang_").append(template.kyNangMemAppend());
+    for(let val of data.KyNangMem){
+        $("._KiNang_ .SoftSkill").append(template.kyNangMemRender(val));
+
+    }
 }
 
 
