@@ -1,4 +1,3 @@
-
 let thongTinCaNhan = JSON.parse(data.ThongTinCaNhan.Urls);
 let hocVan = data.DanhSachHocVan;
 let kinhghiems = data.DanhSachKinhNghiem;
@@ -43,7 +42,7 @@ function renderMangXaHoi() {
 function renderHocVan() {
     for (let i = 0; i < hocVan.length; i++) {
         let thoigian = hocVan[i].ThoiGian.split("-")[0] + " - " + hocVan[i].ThoiGian.split("-")[1]
-        $("._HocVan_").append(template.hocVan(thoigian, hocVan[i].TenTruong, hocVan[i].MoTa, hocVan[i].BangCap, hocVan[i].GPA, hocVan[i].ChuyenNganh));
+        $("._HocVan_").append(template.hocVan(thoigian, hocVan[i].TenTruong, hocVan[i].MoTa, hocVan[i].BangCap, hocVan[i].GPA, hocVan[i].ChuyenNganh, i));
     }
 }
 
@@ -53,7 +52,7 @@ function renderHocVan() {
 function renderKinhNghiem() {
     for (let i = 0; i < kinhghiems.length; i++) {
         let thoigian = kinhghiems[i].ThoiGian.split("-")[0] + " - " + kinhghiems[i].ThoiGian.split("-")[1]
-        $("._KinhNghiem_").append(template.kinhNghiem(kinhghiems[i].TenCongTy, thoigian, kinhghiems[i].ChucVu, kinhghiems[i].MoTa));
+        $("._KinhNghiem_").append(template.kinhNghiem(kinhghiems[i].TenCongTy, thoigian, kinhghiems[i].ChucVu, kinhghiems[i].MoTa,i));
     }
 }
 
@@ -84,7 +83,7 @@ function renderKiNang() {
             }
         } else {
             map.set(arrNgonNgu[i].Ten, arrNgonNgu[i]);
-            let res = { ...arrNgonNgu[i] };
+            let res = {...arrNgonNgu[i] };
             let save = res.TrinhDo
             res.TrinhDo = [];
             res.TrinhDo.push(save);
@@ -97,16 +96,7 @@ function renderKiNang() {
         for (let val2 of val.TrinhDo) {
             sumText += `<li><p id="_TenKiNang_">${val2}</p></li>`
         }
-        sumNgoaiNgu += `
-			<div class="col-md-9 col-md-offset-3" style="margin-top:30px">
-				<h3 class="animated zoomInUp" style="margin-top:0px">${val.Ten}</h3>
-				<p class="animated slideInRight Specialized" style="font-weight:600">
-					<ul style="list-style-type:none; padding:0">
-						${sumText}
-					</ul>
-				</p>
-			</div>
-			`
+        sumNgoaiNgu += template.ngonNgu(val.Ten, sumText)
     }
 
 
@@ -129,12 +119,10 @@ function renderDuAn() {
 
 function customIframe(i, customContent) {
     $($("._LinkYoutube_")[i]).fancybox({
-        afterShow: function () {
+        afterShow: function() {
             $(".fancybox-content").css({ "width": "100%", "display": "flex", "overflow-y": "scroll", "height": "100vh" })
             $(".fancybox-content iframe").css({ "width": "100%", "display": "flex" })
             $('.fancybox-content').append(customContent);
         }
     });
 }
-
-

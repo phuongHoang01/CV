@@ -9,7 +9,6 @@ function renderHocVan() {
 }
 
 function hocVan(ThoiGian, TenTruong, MoTaHocVan, ChuyenNganh, index) {
-  console.log("Hoc Van6");
   return ` <li>
   <div class="timeline-badge1">
     <a><i class="fa fa-circle"></i></a>
@@ -224,30 +223,19 @@ function renderThongTinCaNhan() {
 }
 
 function runCV01() {
-  renderDuAn();
-  renderKinhNghiem();
   renderThongTinCaNhan();
+  renderMangXaHoi();
+  renderKinhNghiem();
   renderHocVan();
   renderKiNang();
-  renderMangXaHoi();
+  renderDuAn();
 }
 
 
 
 
 
-function ChooseTemplate(template) {
-  const section = {};
-  switch (template) {
-    case 1:
-      return runCV01();
-    case 2:
-      break;
 
-    default:
-      break;
-  }
-}
 
 
 

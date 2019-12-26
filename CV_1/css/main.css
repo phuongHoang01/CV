@@ -1,9 +1,8 @@
 /*
     DEMO STYLE
 */
+
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-
-
 body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
@@ -19,7 +18,9 @@ p {
     /*color: #999;*/
 }
 
-a, a:hover, a:focus {
+a,
+a:hover,
+a:focus {
     color: inherit;
     text-decoration: none;
     transition: all 0.3s;
@@ -46,12 +47,16 @@ a, a:hover, a:focus {
     border-bottom: 1px dashed #ddd;
     margin: 40px 0;
 }
-.clear{
-    clear:both;
+
+.clear {
+    clear: both;
 }
+
+
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
+
 #sidebar {
     width: 250px;
     position: fixed;
@@ -84,6 +89,7 @@ a, a:hover, a:focus {
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
+
 #dismiss:hover {
     background: #fff;
     color: #e8676b;
@@ -96,7 +102,7 @@ a, a:hover, a:focus {
     background: rgba(0, 0, 0, 0.7);
     z-index: 998;
     display: none;
-    top:0px;
+    top: 0px;
 }
 
 #sidebar .sidebar-header {
@@ -105,7 +111,6 @@ a, a:hover, a:focus {
     padding-left: 0px;
     padding-top: 1px;
 }
-
 
 #sidebar ul.components {
     padding: 20px 0;
@@ -121,24 +126,25 @@ a, a:hover, a:focus {
     padding: 20px;
     font-size: 1.1em;
     display: block;
-
 }
+
 #sidebar ul li a:hover {
     color: #b13640;
     background: #fff;
 }
 
-#sidebar ul li.active > a, a[aria-expanded="true"] {
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
     color: #fff;
     background: #b13640;
 }
-
 
 a[data-toggle="collapse"] {
     position: relative;
 }
 
-a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+a[aria-expanded="false"]::before,
+a[aria-expanded="true"]::before {
     content: '\e259';
     display: block;
     position: absolute;
@@ -146,10 +152,10 @@ a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
     font-family: 'Glyphicons Halflings';
     font-size: 0.6em;
 }
+
 a[aria-expanded="true"]::before {
     content: '\e260';
 }
-
 
 ul ul a {
     font-size: 0.9em !important;
@@ -168,69 +174,85 @@ ul.CTAs a {
     border-radius: 5px;
     margin-bottom: 5px;
 }
+
 a.download {
     background: #fff;
     color: #7386D5;
 }
-a.article, a.article:hover {
+
+a.article,
+a.article:hover {
     background: #6d7fcc !important;
     color: #fff !important;
 }
-#sidebarCollapse{
+
+#sidebarCollapse {
     background: #b13640;
     color: #fff;
 }
+
+
 /* ---------------------------------------------------
     FIX SIDEBAR
 ----------------------------------------------------- */
 
-.fix-menu-avatar{
-   /* margin-left: -10%;*/
-   padding-top:50px; 
-  padding-bottom:30px;
+.fix-menu-avatar {
+    /* margin-left: -10%;*/
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
-.fix-media-left-ava{
+
+.fix-media-left-ava {
     padding-right: 23px;
 }
-.fix-sider-header{
-      border-bottom: 1px solid #ff9899;
-     
+
+.fix-sider-header {
+    border-bottom: 1px solid #ff9899;
 }
-.fix_ava{
-    padding-left:30px; 
+
+.fix_ava {
+    padding-left: 30px;
 }
-.media-heading{
+
+.media-heading {
     border-radius: 1px solid #fff;
     padding-left: -1%;
     text-align: center;
 }
-.border_text{
+
+.border_text {
     border: 1px solid #fff;
     border-radius: 9px;
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 0px;
     padding-right: 0px;
-    
 }
-.nicesroll-cursors{
+
+.nicesroll-cursors {
     background-color: #b13640;
 }
-.new_navbar_default{
+
+.new_navbar_default {
     background: #e8676b;
     color: #fff;
 }
-.new_navbar_default .navbar-nav>li>a{
+
+.new_navbar_default .navbar-nav>li>a {
     color: #fff;
     font-size: 14pt;
 }
+
+
 /* ---------------------------------------------------
     END FIX SIDEBAR
 ----------------------------------------------------- */
 
+
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
+
 #content {
     width: 100%;
     /*padding: 20px;*/
@@ -240,132 +262,160 @@ a.article, a.article:hover {
     top: 0;
     right: 0;
 }
+
+
 /* ---------------------------------------------------
     BANNER
 ----------------------------------------------------- */
-.secBanner {
-    padding:0px;
 
+.secBanner {
+    padding: 0px;
 }
+
+
 /*.fix_caresoul_inner{
      background-color: rgba(0,0,0,0.6);
 }*/
-.secBanner .carousel-caption
-{
+
+.secBanner .carousel-caption {
     text-align: center;
     padding-bottom: 0px;
-    top:40%; 
+    top: 40%;
 }
-.fixcap{
+
+.fixcap {
     color: #fff;
 }
-.text_shadow{
-    text-shadow: 0px 2px #777;
 
+.text_shadow {
+    text-shadow: 0px 2px #777;
 }
-.weight_text{
+
+.weight_text {
     font-weight: 900;
 }
-.pink_text{
+
+.pink_text {
     color: #fff;
     /*border: 1px solid #e83b35;*/
-    padding:-1%;
+    padding: -1%;
 }
+
 @media screen and (max-width: 768px) {
-    .weight_text{
+    .weight_text {
         font-size: 9pt;
     }
-    .pink_text{
+    .pink_text {
         font-size: 9pt;
     }
 }
+
 @media (min-width: 768px) and (max-width: 992px) {
-    .weight_text{
+    .weight_text {
         font-size: 14pt;
     }
-    .pink_text{
+    .pink_text {
         font-size: 14pt;
     }
 }
+
+
 /* ---------------------------------------------------
     END BANNER
 ----------------------------------------------------- */
 
+
 /* ---------------------------------------------------
     ABOUT
 ----------------------------------------------------- */
-.secAbout{
+
+.secAbout {
     margin-top: 4%;
     margin-bottom: 4%;
 }
-.title_about{
+
+.title_about {
     text-align: center;
-    margin:0 auto;
+    margin: 0 auto;
     font-size: 20pt;
-    height:200px;
-    font-weight:300;
+    height: 200px;
+    font-weight: 300;
 }
-.title_about p{
+
+.title_about p {
     color: black;
 }
+
 .title_about p:first-child {
     font-size: 16pt;
 }
-.title_about >.title_about_p {
+
+.title_about>.title_about_p {
     font-size: 30pt;
-    color:#e8676b;
+    color: #e8676b;
     font-weight: 700;
-    margin-top:6%;
-    margin-bottom:6%;
+    margin-top: 6%;
+    margin-bottom: 6%;
 }
-.img-ava{
+
+.img-ava {
     border: 5px solid #e8676b;
 }
+
 .contact-about-left {
     margin-bottom: 25px;
     width: 50%;
     display: inline-block;
     float: left;
 }
+
 .contact-about-left .contact-icon {
     float: left;
     margin-right: 10px;
 }
-.contact-about-left .contact-icon i{
-        font-size: 20px;
+
+.contact-about-left .contact-icon i {
+    font-size: 20px;
     line-height: normal;
     color: #e8676b;
 }
-.contact-about-left .contact-info h4{
+
+.contact-about-left .contact-info h4 {
     font-size: 20px;
     font-weight: bold;
     margin: 2px 6px 0 0;
     float: left;
 }
-.contact-about-left .contact-info p{
+
+.contact-about-left .contact-info p {
     font-weight: 300;
     font-size: 16px;
     float: left;
     margin-bottom: 0px;
-    color:black;
+    color: black;
 }
-.fix-about-left{
+
+.fix-about-left {
     margin-bottom: 3%;
 }
+
 .content-about p {
     font-size: 14pt;
 }
+
 .about-social {
     padding: 15px 0px 0;
-    
 }
+
 .about-social ul {
     padding: 0px;
     margin: 0px;
 }
+
 .about-social ul li {
     display: inline-block;
 }
+
 .about-social ul li a {
     display: block;
     margin: 0px 5px;
@@ -377,40 +427,46 @@ a.article, a.article:hover {
     text-align: center;
     font-size: 14px;
 }
+
 @media (min-width: 410px) and (max-width: 768px) {
-   .title_about p{
-    font-size: 9pt;
-   }
-   .title_about_p p{
-    font-size: 9pt;
-   }
+    .title_about p {
+        font-size: 9pt;
+    }
+    .title_about_p p {
+        font-size: 9pt;
+    }
 }
+
 @media screen and (max-width: 410px) {
-    .title_about p{
-    font-size: 10pt;
-   }
+    .title_about p {
+        font-size: 10pt;
+    }
 }
+
+
 /* ---------------------------------------------------
     END ABOUT
 ----------------------------------------------------- */
 
+
 /* ---------------------------------------------------
     BEGIN RESUME
 ----------------------------------------------------- */
-.secResume{
 
+.secResume {}
+
+.bg_resume {
+    position: relative;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../img/img_parallax.jpg');
+    width: 100%;
+    padding-top: 4%;
 }
-.bg_resume{
-  position: relative;
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('../img/img_parallax.jpg');
-  width: 100%;
-  padding-top: 4%;
-}
+
 .bg_resume:before {
     content: "";
     position: absolute;
@@ -419,28 +475,32 @@ a.article, a.article:hover {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
+}
 
-}
-.title_resume{
+.title_resume {
     text-align: center;
-    margin:0 auto;
+    margin: 0 auto;
     font-size: 20pt;
-    height:200px;
-    font-weight:300;
+    height: 200px;
+    font-weight: 300;
 }
-.title_resume p{
+
+.title_resume p {
     color: white;
 }
+
 .title_resume p:first-child {
     font-size: 16pt;
 }
-.title_resume >.title_about_p {
+
+.title_resume>.title_about_p {
     font-size: 30pt;
-    color:#e8676b;
+    color: #e8676b;
     font-weight: 700;
-    margin-top:6%;
-    margin-bottom:6%;
+    margin-top: 6%;
+    margin-bottom: 6%;
 }
+
 .year {
     width: 100px;
     height: 100px;
@@ -457,53 +517,59 @@ a.article, a.article:hover {
     transition: all 0.5s ease-out 0s;
     background: #e8676b;
 }
-.fix_new_exp{
+
+.fix_new_exp {
     color: #fff;
     text-align: center;
     font-size: 40pt;
-    padding-top:18%;
+    padding-top: 18%;
 }
+
 @media (min-width: 410px) and (max-width: 768px) {
     .secResume .timeline .timeline-panel {
-    font-size: 9pt;
+        font-size: 9pt;
     }
-    .secResume .timeline .timeline-panel  h3 {
-    font-size: 10pt;
+    .secResume .timeline .timeline-panel h3 {
+        font-size: 10pt;
     }
 }
+
 @media screen and (max-width: 410px) {
     .secResume .timeline .timeline-panel {
-    font-size: 8pt;
+        font-size: 8pt;
     }
     .secResume .timeline .timeline-panel .timeline-heading h3 {
-    font-size: 9pt;
+        font-size: 9pt;
     }
 }
+
 @media (min-width: 410px) and (max-width: 768px) {
     .secResume .timeline .timeline-panel1 {
-    font-size: 9pt;
+        font-size: 9pt;
     }
     .secResume .timeline .timeline-panel1 h3 {
-    font-size: 10pt;
+        font-size: 10pt;
     }
 }
+
 @media screen and (max-width: 410px) {
     .secResume .timeline .timeline-panel1 {
-    font-size: 8pt;
+        font-size: 8pt;
     }
     .secResume .timeline .timeline-panel1 h3 {
-    font-size: 9pt;
+        font-size: 9pt;
     }
 }
+
 .timeline {
     list-style: none;
     padding: 10px 0;
     display: inline-block;
-    float: left;
     width: 100%;
     color: black;
     position: relative;
 }
+
 .timeline:before {
     top: 0;
     bottom: 0;
@@ -513,14 +579,16 @@ a.article, a.article:hover {
     background: rgba(254, 252, 252, 0.6);
     left: 50%;
 }
-.timeline > li {
+
+.timeline li {
     margin-bottom: 40px;
     position: relative;
     width: 50%;
     float: left;
     clear: left;
 }
-.timeline > li > .timeline-badge {
+
+.timeline li>.timeline-badge {
     width: 24px;
     height: 24px;
     line-height: 50px;
@@ -530,32 +598,37 @@ a.article, a.article:hover {
     right: -12px;
     z-index: 5;
 }
+
 .timeline-badge a {
     color: #fff;
     margin-left: 2px;
 }
-.timeline > li > .timeline-panel {  
+
+.timeline li>.timeline-panel {
     width: 80%;
     float: left;
     background: rgba(254, 252, 252, 0.6);
     position: relative;
     padding: 30px;
-
 }
+
 .timeline h3 {
     color: #e8676b;
     margin-top: 0px;
 }
+
 .timeline span {
     font-weight: 600;
     margin-bottom: 10px;
     display: inline-block;
     width: 100%;
 }
+
 p {
     line-height: 24px;
 }
-.timeline > li > .timeline-panel:after {
+
+.timeline li>.timeline-panel:after {
     position: absolute;
     top: 27px;
     right: -14px;
@@ -571,29 +644,37 @@ p {
     -o-transition: all 0.5s ease-out 0s;
     transition: all 0.5s ease-out 0s;
 }
-.fix-building{
-    margin-right:1%;
+
+.fix-building {
+    margin-right: 1%;
 }
-.timeline > li.timeline-inver {
+
+.timeline li.timeline-inver {
     float: right;
     clear: right;
 }
-.timeline > li.timeline-inver > .timeline-badge {
+
+.timeline li.timeline-inver>.timeline-badge {
     left: -12px;
 }
-.timeline > li.timeline-inver > .timeline-panel:after {
+
+.timeline li.timeline-inver>.timeline-panel:after {
     border-left-width: 0;
     border-right-width: 14px;
     left: -14px;
     right: auto;
 }
-.timeline > li.timeline-inver > .timeline-panel {
+
+.timeline li.timeline-inver>.timeline-panel {
     float: right;
     padding: 20px;
     text-align: center;
 }
+
+
 /*PANEL1*/
-.timeline > li > .timeline-panel1 {  
+
+.timeline li>.timeline-panel1 {
     width: 80%;
     float: left;
     background: rgba(254, 252, 252, 0.6);
@@ -601,7 +682,8 @@ p {
     padding: 20px;
     text-align: center;
 }
-.timeline > li > .timeline-panel1:after {
+
+.timeline li>.timeline-panel1:after {
     position: absolute;
     top: 27px;
     right: -14px;
@@ -617,109 +699,128 @@ p {
     -o-transition: all 0.5s ease-out 0s;
     transition: all 0.5s ease-out 0s;
 }
-.timeline > li.timeline-inver > .timeline-panel1:after {
+
+.timeline li.timeline-inver>.timeline-panel1:after {
     border-left-width: 0;
     border-right-width: 14px;
     left: -14px;
     right: auto;
 }
-.timeline > li.timeline-inver > .timeline-panel1 {
+
+.timeline li.timeline-inver>.timeline-panel1 {
     float: right;
     padding: 30px;
     text-align: left;
 }
+
 @media (min-width: 438px) and (max-width: 768px) {
-    .secResume{
-            height:1100px;
+    .secResume {
+        height: 1100px;
     }
 }
+
 @media screen and (max-width: 438px) {
-    .secResume{
-            height:1275px;
+    .secResume {
+        height: 1275px;
     }
 }
+
+
 /* ---------------------------------------------------
     END RESUME
 ----------------------------------------------------- */
 
+
 /* ---------------------------------------------------
     BEGIN EDUCATOR
 ----------------------------------------------------- */
-.secEducator{
+
+.secEducator {
     padding-top: 4%;
     padding-bottom: 4%;
 }
+
 @media (min-width: 410px) and (max-width: 768px) {
-    .fix_edu_timeline{
+    .fix_edu_timeline {
         margin-top: 20%;
     }
 }
+
 @media screen and (max-width: 410px) {
-    .fix_edu_timeline{
+    .fix_edu_timeline {
         margin-top: 30%;
     }
 }
-.title_educator{
+
+.title_educator {
     text-align: center;
-    margin:0 auto;
+    margin: 0 auto;
     font-size: 20pt;
-    height:200px;
-    font-weight:300;
+    height: 200px;
+    font-weight: 300;
 }
-.title_educator p{
+
+.title_educator p {
     color: black;
 }
+
 .title_educator p:first-child {
     font-size: 16pt;
 }
-.title_educator >.title_about_p {
+
+.title_educator>.title_about_p {
     font-size: 30pt;
-    color:#e8676b;
+    color: #e8676b;
     font-weight: 700;
-    margin-top:6%;
-    margin-bottom:6%;
+    margin-top: 6%;
+    margin-bottom: 6%;
 }
+
 .timeline1 {
     list-style: none;
     padding: 10px 0;
     display: inline-block;
-    float: left;
     width: 100%;
     color: white;
     position: relative;
 }
+
 @media (min-width: 410px) and (max-width: 768px) {
     .secEducator .timeline1 .timeline-panel {
-    font-size: 9pt;
+        font-size: 9pt;
     }
     .secEducator .timeline1 .timeline-panel h3 {
-    font-size: 10pt;
+        font-size: 10pt;
     }
 }
+
 @media screen and (max-width: 410px) {
     .secEducator .timeline1 .timeline-panel {
-    font-size: 8pt;
+        font-size: 8pt;
     }
     .secEducator .timeline1 .timeline-panel h3 {
-    font-size: 9pt;
+        font-size: 9pt;
     }
 }
+
 @media (min-width: 410px) and (max-width: 768px) {
     .secEducator .timeline1 .timeline-panel1 {
-    font-size: 9pt;
+        font-size: 9pt;
     }
     .secEducator .timeline1 .timeline-panel1 h3 {
-    font-size: 10pt;
+        font-size: 10pt;
     }
 }
+
 @media screen and (max-width: 410px) {
     .secEducator .timeline1 .timeline-panel1 {
-    font-size: 8pt;
+        font-size: 8pt;
     }
     .secEducator .timeline1 .timeline-panel1 h3 {
-    font-size: 9pt;
+        font-size: 9pt;
     }
 }
+
 .timeline1:before {
     top: 0;
     bottom: 0;
@@ -729,14 +830,16 @@ p {
     background: rgba(61, 68, 81, 0.6);
     left: 50%;
 }
-.timeline1 > li {
+
+.timeline1 li {
     margin-bottom: 40px;
     position: relative;
     width: 50%;
     float: left;
     clear: left;
 }
-.timeline1 > li > .timeline-badge1 {
+
+.timeline1 li>.timeline-badge1 {
     width: 24px;
     height: 24px;
     line-height: 50px;
@@ -746,32 +849,37 @@ p {
     right: -12px;
     z-index: 5;
 }
+
 .timeline-badge1 a {
     color: #3d4451;
     margin-left: 2px;
 }
-.timeline1 > li > .timeline-panel {  
+
+.timeline1 li>.timeline-panel {
     width: 80%;
     float: left;
     background: rgba(61, 68, 81, 0.6);
     position: relative;
     padding: 30px;
-
 }
+
 .timeline1 h3 {
     color: #ff9899;
     margin-top: 0px;
 }
+
 .timeline1 span {
     font-weight: 600;
     margin-bottom: 10px;
     display: inline-block;
     width: 100%;
 }
+
 p {
     line-height: 24px;
 }
-.timeline1 > li > .timeline-panel:after {
+
+.timeline1 li>.timeline-panel:after {
     position: absolute;
     top: 27px;
     right: -14px;
@@ -787,29 +895,37 @@ p {
     -o-transition: all 0.5s ease-out 0s;
     transition: all 0.5s ease-out 0s;
 }
-.fix-building{
-    margin-right:1%;
+
+.fix-building {
+    margin-right: 1%;
 }
-.timeline1 > li.timeline-inver {
+
+.timeline1 li.timeline-inver {
     float: right;
     clear: right;
 }
-.timeline1 > li.timeline-inver > .timeline-badge1 {
+
+.timeline1 li.timeline-inver>.timeline-badge1 {
     left: -12px;
 }
-.timeline1 > li.timeline-inver > .timeline-panel:after {
+
+.timeline1 li.timeline-inver>.timeline-panel:after {
     border-left-width: 0;
     border-right-width: 14px;
     left: -14px;
     right: auto;
 }
-.timeline1 > li.timeline-inver > .timeline-panel {
+
+.timeline1 li.timeline-inver>.timeline-panel {
     float: right;
     padding: 20px;
     text-align: center;
 }
+
+
 /*PANEL1*/
-.timeline1 > li > .timeline-panel1 {  
+
+.timeline1 li>.timeline-panel1 {
     width: 80%;
     float: left;
     background: rgba(61, 68, 81, 0.6);
@@ -817,7 +933,8 @@ p {
     padding: 20px;
     text-align: center;
 }
-.timeline1 > li > .timeline-panel1:after {
+
+.timeline1 li>.timeline-panel1:after {
     position: absolute;
     top: 27px;
     right: -14px;
@@ -833,52 +950,63 @@ p {
     -o-transition: all 0.5s ease-out 0s;
     transition: all 0.5s ease-out 0s;
 }
-.timeline1 > li.timeline-inver > .timeline-panel1:after {
+
+.timeline1 li.timeline-inver>.timeline-panel1:after {
     border-left-width: 0;
     border-right-width: 14px;
     left: -14px;
     right: auto;
 }
-.timeline1 > li.timeline-inver > .timeline-panel1 {
+
+.timeline1 li.timeline-inver>.timeline-panel1 {
     float: right;
     padding: 30px;
     text-align: left;
 }
+
+
 /* ---------------------------------------------------
     END EDUCATOR
 ----------------------------------------------------- */
 
+
 /* ---------------------------------------------------
     BEGIN SKILLS
 ----------------------------------------------------- */
-.secSkills{
+
+.secSkills {
     background: #DDDDDD;
     padding-top: 4%;
 }
-.title_skill{
-    
-}
-.skill{
+
+.title_skill {}
+
+.skill {
     margin-top: 3%;
 }
-.skill ul{
+
+.skill ul {
     padding: 0px;
 }
+
 .skill ul li {
     position: relative;
     font-size: 16px;
     list-style: none;
 }
+
 .fix-progress {
     /*background-image: linear-gradient(to bottom,#bbbbbb,0,#bbbbbb 100%);*/
     border-radius: 0px;
     height: 8px;
-    margin-top:1%;
+    margin-top: 1%;
 }
+
 .progress-bar {
     top: 0px;
     background: #e8676b;
 }
+
 .skill .pct {
     position: absolute;
     top: 5px;
@@ -888,10 +1016,12 @@ p {
     color: #3d4451 !important;
     z-index: 5;
 }
-.fix-bar{
-    -webkit-animation: bar_ani 4s linear  1 normal;
-          animation: bar_ani 4s linear  1 normal;
+
+.fix-bar {
+    -webkit-animation: bar_ani 4s linear 1 normal;
+    animation: bar_ani 4s linear 1 normal;
 }
+
 @-webkit-keyframes bar_ani {
     0% {
         width: 0%;
@@ -904,6 +1034,7 @@ p {
         filter: alpha(opacity=100);
     }
 }
+
 @keyframes bar_ani {
     0% {
         width: 0%;
@@ -916,10 +1047,12 @@ p {
         filter: alpha(opacity=100);
     }
 }
-.fix-bar1{
+
+.fix-bar1 {
     -webkit-animation: bar_ani_1 4s linear 1 normal;
-          animation: bar_ani_1 4s linear 1 normal;
+    animation: bar_ani_1 4s linear 1 normal;
 }
+
 @-webkit-keyframes bar_ani_1 {
     0% {
         width: 0%;
@@ -932,6 +1065,7 @@ p {
         filter: alpha(opacity=100);
     }
 }
+
 @keyframes bar_ani_1 {
     0% {
         width: 0%;
@@ -944,10 +1078,12 @@ p {
         filter: alpha(opacity=100);
     }
 }
-.fix-bar2{
+
+.fix-bar2 {
     -webkit-animation: bar_ani_2 4s linear 1 normal;
-          animation: bar_ani_2 4s linear 1 normal;
+    animation: bar_ani_2 4s linear 1 normal;
 }
+
 @-webkit-keyframes bar_ani_2 {
     0% {
         width: 0%;
@@ -960,6 +1096,7 @@ p {
         filter: alpha(opacity=100);
     }
 }
+
 @keyframes bar_ani_2 {
     0% {
         width: 0%;
@@ -972,10 +1109,12 @@ p {
         filter: alpha(opacity=100);
     }
 }
-.fix-bar3{
+
+.fix-bar3 {
     -webkit-animation: bar_ani_3 4s linear 1 normal;
-          animation: bar_ani_3 4s linear 1 normal;
+    animation: bar_ani_3 4s linear 1 normal;
 }
+
 @-webkit-keyframes bar_ani_3 {
     0% {
         width: 0%;
@@ -988,6 +1127,7 @@ p {
         filter: alpha(opacity=100);
     }
 }
+
 @keyframes bar_ani_3 {
     0% {
         width: 0%;
@@ -1000,10 +1140,12 @@ p {
         filter: alpha(opacity=100);
     }
 }
-.fix-bar4{
+
+.fix-bar4 {
     -webkit-animation: bar_ani_4 4s linear 1 normal;
-          animation: bar_ani_4 4s linear 1 normal;
+    animation: bar_ani_4 4s linear 1 normal;
 }
+
 @-webkit-keyframes bar_ani_4 {
     0% {
         width: 0%;
@@ -1016,6 +1158,7 @@ p {
         filter: alpha(opacity=100);
     }
 }
+
 @keyframes bar_ani_4 {
     0% {
         width: 0%;
@@ -1028,68 +1171,79 @@ p {
         filter: alpha(opacity=100);
     }
 }
+
+
 /* ---------------------------------------------------
     END SKILLS
 ----------------------------------------------------- */
 
+
 /* ---------------------------------------------------
     BEGIN CYBERSOFT
 ----------------------------------------------------- */
-.secCybersoft{
+
+.secCybersoft {
     padding-top: 4%;
 }
-.fix-hover{
-        padding-left: 8%;
-        padding-bottom: 8%;
-        /*margin:0 auto;*/
+
+.fix-hover {
+    padding-left: 8%;
+    padding-bottom: 8%;
+    /*margin:0 auto;*/
 }
+
 .view {
-   width: 300px;
-   height: 200px;
-   margin: 10px;
-   float: left;
-   border: 10px solid #fff;
-   overflow: hidden;
-   position: relative;
-   text-align: center;
-   -webkit-box-shadow: 1px 1px 2px #e6e6e6;
-   -moz-box-shadow: 1px 1px 2px #e6e6e6;
-   box-shadow: 1px 1px 2px #e6e6e6;
-   cursor: default;
- 
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    -webkit-box-shadow: 1px 1px 2px #e6e6e6;
+    -moz-box-shadow: 1px 1px 2px #e6e6e6;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
 }
-.view .mask,.view .content {
-   width: 300px;
-   height: 200px;
-   position: absolute;
-   overflow: hidden;
-   top: 0;
-   left: 0;
+
+.view .mask,
+.view .content {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
 }
+
 .view img {
-   display: block;
-   position: relative;
+    display: block;
+    position: relative;
 }
+
 .view h2 {
-   text-transform: uppercase;
-   color: #fff;
-   text-align: center;
-   position: relative;
-   font-size: 17px;
-   padding: 10px;
-   background: rgba(0, 0, 0, 0.8);
-   margin: 20px 0 0 0;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0;
 }
+
 .view p {
-   font-family: Georgia, serif;
-   font-style: italic;
-   font-size: 12px;
-   position: relative;
-   color: #fff;
-   padding: 10px 20px 20px;
-   text-align: center;
-  /* line-height: 1;*/
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center;
+    /* line-height: 1;*/
 }
+
 .view a.info {
     display: inline-block;
     text-decoration: none;
@@ -1106,34 +1260,50 @@ p {
 }
 
 .view a.info: hover {
-   -webkit-box-shadow: 0 0 5px #000;
-   -moz-box-shadow: 0 0 5px #000;
-   box-shadow: 0 0 5px #000;
+    -webkit-box-shadow: 0 0 5px #000;
+    -moz-box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 5px #000;
 }
+
 #myImg {
-   /* border-radius: 5px;*/
+    /* border-radius: 5px;*/
     cursor: pointer;
     transition: 0.3s;
 }
 
-#myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+#myImg:hover {
+    opacity: 0.7;
 }
 
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+
 /* Modal Content (image) */
+
 .modal-content {
     margin: auto;
     display: block;
@@ -1141,7 +1311,9 @@ p {
     max-width: 700px;
 }
 
+
 /* Caption of Modal Image */
+
 #caption {
     margin: auto;
     display: block;
@@ -1153,8 +1325,11 @@ p {
     height: 150px;
 }
 
+
 /* Add Animation */
-.modal-content, #caption {    
+
+.modal-content,
+#caption {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
@@ -1162,16 +1337,26 @@ p {
 }
 
 @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
 }
 
 @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
 }
 
+
 /* The Close Button */
+
 .close {
     position: absolute;
     top: 15px;
@@ -1189,25 +1374,35 @@ p {
     cursor: pointer;
 }
 
+
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+
+@media only screen and (max-width: 700px) {
     .modal-content {
         width: 100%;
     }
 }
+
+
 /* ---------------------------------------------------
     END CYBERSOFT
 ----------------------------------------------------- */
 
+
 /* ---------------------------------------------------
     BEGIN PORTFOLIO
 ----------------------------------------------------- */
-.secProtfolio{
+
+.secProtfolio {
     background: #DDDDDD;
     padding-top: 4%;
     padding-bottom: 4%;
 }
+
+
 /* -------- BEGIN MIXITUP -------*/
+
+
 /* Controls
 ---------------------------------------------------------------------- */
 
@@ -1254,11 +1449,11 @@ p {
     border-left: 2px solid;
     top: calc(50% - 6px);
     left: calc(50% - 6px);
-    transform:  translateY(1px) rotate(45deg);
+    transform: translateY(1px) rotate(45deg);
 }
 
 .control[data-sort*=":desc"]:after {
-    transform:  translateY(-4px) rotate(-135deg);
+    transform: translateY(-4px) rotate(-135deg);
 }
 
 .mixitup-control-active {
@@ -1277,7 +1472,7 @@ p {
     border-radius: 0 3px 3px 0;
 }
 
-.control[data-filter] + .control[data-sort] {
+.control[data-filter]+.control[data-sort] {
     margin-left: .75rem;
 }
 
@@ -1318,37 +1513,48 @@ p {
     display: inline-block;
 }
 
+
 /* -------- END MIXITUP -------*/
 
 
 /* -------- BEGIN MY STYLE MIXITUP -------*/
+
 .controls {
     font-size: 25px;
     background: none;
     text-align: center;
 }
+
 .mixitup-control-active {
-     background: none;
+    background: none;
     color: #e86b67;
 }
-.filter{
+
+.filter {
     cursor: pointer;
     border: 1px solid black;
     background: white;
-    border-radius:10px;
+    border-radius: 10px;
 }
-.secPort .thumbnail{
+
+.secPort .thumbnail {
     border-top: 1px solid #eee;
     border-left: 1px solid #eee;
     padding: 0;
     margin: 0px;
     box-shadow: 0px 6px 5px #888888;
 }
+
+
 /* -------- END MY STYLE MIXITUP -------*/
 
+
 /* ----------- MEDIA MIXITUP --------*/
+
+
 /* Grid Breakpoints
 --------------------------------------- */
+
 
 /* 2 Columns */
 
@@ -1359,6 +1565,7 @@ p {
     }
 }
 
+
 /* 3 Columns */
 
 @media screen and (min-width: 961px) {
@@ -1368,6 +1575,7 @@ p {
     }
 }
 
+
 /* 4 Columns */
 
 @media screen and (min-width: 1281px) {
@@ -1376,35 +1584,43 @@ p {
         width: calc(100%/4 - (((4 - 1) * 1rem) / 4));
     }
 }
-.item_banner
-{
-       width: 100%;
-       background-color: rgba(0,0,0,0.8);
+
+.item_banner {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
 }
+
 .fixthumbnail {
     margin-bottom: 0;
 }
-.imgMix{
+
+.imgMix {
     margin-top: 5%;
 }
+
 
 /* ---------------------------------------------------
     END PORTFOLIO
 ----------------------------------------------------- */
 
+
 /* ---------------------------------------------------
     BEGIN CONTACT
 ----------------------------------------------------- */
-.secContact{
+
+.secContact {
     background-color: #DDDDDD;
     padding-top: 4%;
     padding-bottom: 4%;
 }
+
 .input_text input[type="text"] {
     border-radius: 2px;
     padding: 14px 12px;
 }
-.input_text input, .input_text textarea {
+
+.input_text input,
+.input_text textarea {
     background: transparent none repeat scroll 0 0;
     border: 1px solid #e8676b;
     color: black;
@@ -1413,6 +1629,7 @@ p {
     -webkit-transition: .5s;
     transition: .5s;
 }
+
 .input_text textarea {
     border-radius: 2px;
     height: 150px;
@@ -1420,6 +1637,7 @@ p {
     -webkit-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
 }
+
 .input_text input[type="submit"] {
     border-radius: 2px;
     letter-spacing: 1px;
@@ -1427,19 +1645,22 @@ p {
     position: relative;
     text-transform: uppercase;
     width: 122px;
-    color:#868686;
+    color: #868686;
 }
+
 .text_col2 strong {
     display: block;
-   position: relative;
+    position: relative;
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 28px;
-    color:#e8676b;
+    color: #e8676b;
 }
-.text_col2 p{
-    color:#868686;
+
+.text_col2 p {
+    color: #868686;
 }
+
 .text_col2 strong::after {
     background: #b13640 none repeat scroll 0 0;
     bottom: -12px;
@@ -1448,44 +1669,52 @@ p {
     left: 0;
     position: absolute;
     width: 170px;
-    color:#868686;
+    color: #868686;
 }
+
 address {
     margin-bottom: 20px;
     font-style: normal;
     line-height: 1.42857143;
     margin-top: 85px;
 }
+
 address i {
     margin-right: 8px;
     color: #e8676b;
 }
+
+
 /* ---------------------------------------------------
     END CONTACT
 ----------------------------------------------------- */
+
 
 /* ---------------------------------------------------
     BEGIN COPYRIGHT
 ----------------------------------------------------- */
 
-.fix-footer{
-     background: #DDDDDD;
+.fix-footer {
+    background: #DDDDDD;
     height: 80px;
 }
+
 .fix-footer .col-md-12 {
     margin-top: 2%;
 }
-.fix-footer .col-md-12 a{
+
+.fix-footer .col-md-12 a {
     margin-right: 30px;
 }
-.fix-footer a{
-    color:#e8676b;
+
+.fix-footer a {
+    color: #e8676b;
     font-size: 29px;
 }
-@media screen and (max-width: 438px)
-{
-    body{
-         overflow-x: hidden;
+
+@media screen and (max-width: 438px) {
+    body {
+        overflow-x: hidden;
     }
 }
 
@@ -1498,10 +1727,9 @@ address i {
 
 .fancybox-slide--iframe .fancybox-content {
     display: flex;
-    max-width  : 80%;
-    max-height : 80%;
+    max-width: 80%;
+    max-height: 80%;
     margin: 0;
-    
 }
 
 .customHTML {
@@ -1513,9 +1741,11 @@ address i {
     display: block;
 }
 
-._thumbnail_     {
+._thumbnail_ {
     margin-bottom: 20px;
 }
+
+
 /* ---------------------------------------------------
     END CONTENT STYLE
 ----------------------------------------------------- */

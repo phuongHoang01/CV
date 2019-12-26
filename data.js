@@ -10,9 +10,8 @@ let data = {
         "Avatar": "",
     },
     "KyNang": {
-        "NgonNguLapTrinh": "[{\"Ten\":\"C#\",\"TrinhDo\":\"70\"},{\"Ten\":\"Javascript\",\"TrinhDo\":\"80\"},{\"Ten\":\"TSQL\",\"TrinhDo\":\"70\"}]",
-        "Framework": "[{\"Ten\":\"NetCore\",\"TrinhDo\":\"70\"},{\"Ten\":\"Angular 6\",\"TrinhDo\":\"80\"},{\"Ten\":\"Bootstrap 4\",\"TrinhDo\":\"80\"},{\"Ten\":\"SCSS\",\"TrinhDo\":\"90\"}]",
-        "ThuVien": "[{\"Ten\":\"ReactJS\",\"TrinhDo\":\"80\"},{\"Ten\":\"JQUERY\",\"TrinhDo\":\"90\"}]",
+        "ThanhThao": "[{\"Ten\":\"C#\",\"TrinhDo\":\"70\"},{\"Ten\":\"Javascript\",\"TrinhDo\":\"80\"},{\"Ten\":\"TSQL\",\"TrinhDo\":\"70\"}]",
+        "HieuBiet": "[{\"Ten\":\"NetCore\",\"TrinhDo\":\"70\"},{\"Ten\":\"Angular 6\",\"TrinhDo\":\"80\"},{\"Ten\":\"Bootstrap 4\",\"TrinhDo\":\"80\"},{\"Ten\":\"SCSS\",\"TrinhDo\":\"90\"}]",
         "NgoaiNgu": "[{\"Ten\":\"English\",\"TrinhDo\":\"IELTS: 7.0\"},{\"Ten\":\"English\",\"TrinhDo\":\"TOEIC: 750\"},{\"Ten\":\"Japanese\",\"TrinhDo\":\"N1\"},{\"Ten\":\"Japanese\",\"TrinhDo\":\"A1\"}]"
     },
     "DanhSachDuAn": [
