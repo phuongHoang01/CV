@@ -143,15 +143,15 @@ function chiTietDuAn(i, TieuDe, ViTri, MoTa, KyNang) {
   return customIframe(i,customContent);
 }
 
-function customIframe(i,customContent) {
-  $(document).ready(function () {
-    $($("._LinkYoutube_")[i]).fancybox({
-      afterShow: function () {
-          $('.fancybox-content').append(customContent);
-      }
-  });
-  });
-}
+// function customIframe(i,customContent) {
+//   $(document).ready(function () {
+//     $($("._LinkYoutube_")[i]).fancybox({
+//       afterShow: function () {
+//           $('.fancybox-content').append(customContent);
+//       }
+//   });
+//   });
+// }
 
 function renderMangXaHoi() {
   let mangXaHoiDanhSach = JSON.parse(data.ThongTinCaNhan.Urls)

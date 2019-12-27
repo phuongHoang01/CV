@@ -227,7 +227,7 @@
                             <div class="col-md-12">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-md-12" id="_KiNang_">
+                                        <div class="col-md-12 _KiNang_">
 
                                         </div>
                                     </div>
@@ -237,13 +237,6 @@
                             </div>
                         </div>
                         <!--.row -->
-                        <div class="row" id="_NgonNgu_" style="margin-top: 20px">
-                            <div class="col-md-12">
-                                <div class="section-title">
-                                    <h2 class="aniview" data-av-animation="bounceInLeft" id="tagskill">Language</h2>
-                                </div>
-                            </div>
-                        </div>
 
                     </div>
                     <!-- .container-fluid -->
@@ -261,7 +254,7 @@
                         </div>
                         <!--.row-->
                         <div class="row">
-                            <div class="col-md-12 aniview" data-av-animation="zoomInDown" id="_KinhNghiem_">
+                            <div class="col-md-12 aniview _KinhNghiem_" data-av-animation="zoomInDown">
 
                             </div>
                         </div>
@@ -283,7 +276,7 @@
                         </div>
                         <!--.row-->
                         <div class="row">
-                            <div class="col-md-12 aniview" data-av-animation="zoomIn" id="_HocVan_">
+                            <div class="col-md-12 aniview _HocVan_" data-av-animation="zoomIn" >
 
                                 <!-- .experience-item -->
                             </div>
@@ -339,15 +332,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row" id="_DuAn_">
-                            <div class="col-md-6 _thumbnail_">
-                                <a class="_LinkYoutube_" data-fancybox data-type="iframe"
-                                    data-src="https://www.youtube.com/embed/19LN06_kTJw" href="javascript:;">
-                                    <img id="_LinkHinhAnh_" class="img-rounded"
-                                        src="http://thuthuatphanmem.vn/uploads/2018/05/18/hinh-nen-may-tinh-hd-la-phong-xanh-dep_024422517.jpg"
-                                        alt="project6" style="width:100%">
-                                </a>
-                            </div>
+                        <div class="row _DuAn_" >
+                
 
                         </div>
                         <!-- /.row -->
@@ -408,7 +394,14 @@
     <!-- FANCY BOX -->
     <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="fancybox/dist/jquery.fancybox.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../chooseTemplate.js"></script>
+	<script src="../data.js"></script>
+	<script src="../main.js"></script>
+	<script>
+		var template = ChooseTemplate(5);
+		RunCV();
+	</script>
+
 
 </body>
 

@@ -737,14 +737,7 @@ button:focus,
   }
 
 
-  .customHTML {
-    margin-left: 10;
-    margin-right: 10;
-    bottom: 0px;
-    right: 0;
-    background: #f2f2f2;
-    display: block;
-   }
+
   
   .fancybox-slide--iframe {
     display: flex !important;

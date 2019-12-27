@@ -5,7 +5,6 @@
 	<title></title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-	<link href="fancybox/dist/jquery.fancybox.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -15,6 +14,7 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script src="isotope.pkgd.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link href="fancybox/dist/jquery.fancybox.min.css" rel="stylesheet">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 	<script type="text/javascript">
 		function changeCss() {
@@ -30,9 +30,6 @@
 			}
 		}
 		window.addEventListener("scroll", changeCss, false);
-		$(document).ready(function () {
-			$('#portfolio a').fancybox();
-		});
 	</script>
 </head>
 
@@ -68,7 +65,7 @@
 	<div id="header" class="container-fluid">
 		<div class="container jumbotron text-center">
 			<div id="text-header" class="zoomInUp wow">
-				<h1>I'M <span id="_HoTen_">TRAN THANH VU</span></h1>
+				<h1>I'M <span class="_HoTen_">TRAN THANH VU</span></h1>
 				<h3 id="_ChucVu_">Design & Web Developer Front-End Full Stack</h3>
 			</div>
 		</div>
@@ -87,14 +84,16 @@
 		<div class="row" id="content">
 			<div class="container">
 				<div class="col-sm-12">
-					<h4 id="_HoTen_">TRAN THANH VU</h4>
+					<h4 class="_HoTen_">TRAN THANH VU</h4>
 					<h5 id="_ChucVu_">Webdesigner & Web Developer from VietNam</h5>
-					<p id="_SoLuocBanThan_">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quos eius
+					<p class="_SoLuocBanThan_">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quos eius
 						suscipit repellat nemo, enim nobis inventore animi hic autem sequi mollitia, ab non atque. Sed
 						dignissimos nostrum architecto temporibus.</p>
 				</div>
 				<button class="btn btn-primary">Download Resume</button>
-				<img id="_Avatar_" class="rounded-circle" src="img/hinhdaidien.jpg">
+				<div class="_Avatar_">
+					<img class="rounded-circle" src="img/hinhdaidien.jpg">
+				</div>
 			</div>
 		</div>
 	</div>
@@ -119,7 +118,7 @@
 									</span>Education</h3>
 							</div>
 							<div class="category_body resume_category_body">
-								<article class="post resume_post resume_post_1 first even" id="_HocVan_">
+								<article class="post resume_post resume_post_1 first even _HocVan_">
 
 								
 
@@ -133,7 +132,7 @@
 									</span>EMPLOYMENT</h3>
 							</div>
 							<div class="category_body resume_category_body">
-								<article class="post resume_post resume_post_1 first even" id="_KinhNghiem_">
+								<article class="post resume_post resume_post_1 first even _KinhNghiem_" >
 									<div class="post_header resume_post_header">
 										<i class="fa fa-check-circle" aria-hidden="true"></i>
 										<span id="_TenCongTy_" class="post_subtitle">GONG CHA VIET NAM</span>
@@ -157,20 +156,12 @@
 					</div>
 					<div class="col-sm-2"></div>
 					<div class="col-sm-4">
-						<div class="category_header resume_category_header" id="_KiNang_">
+						<div class="category_header resume_category_header _KiNang_">
 
 							<h3 class="category_title" style="background: #373737"><span class="category_title_icon"
 									style="background-color:#373737">
 									<i class="fa fa-star-half-o" aria-hidden="true"></i>
 								</span>PROGRAMMING SKILLS</h3>
-						</div>
-
-						<div class="category_header resume_category_header" id="_NgonNgu_">
-
-							<h3 class="category_title" style="background: #373737"><span class="category_title_icon"
-									style="background-color:#373737">
-									<i class="fa fa-star-half-o" aria-hidden="true"></i>
-								</span>LANGUAGE</h3>
 						</div>
 						
 					</div>
@@ -194,7 +185,7 @@
 						</ul>
 					</div> -->
 			</div>
-			<div class="row" id="_DuAn_">
+			<div class="row _DuAn_">
 				
 			</div>
 
@@ -218,8 +209,8 @@
 							</span>Contact Info </h3>
 					</div>
 					<ul>
-						<li>Email: <span id="_Email_">vu261194@gmail.com</span></li>
-						<li>Phone: <span ID="_SoDT_">+123 456 789</span></li>
+						<li>Email: <span class="_Email_">vu261194@gmail.com</span></li>
+						<li>Phone: <span class="_SoDT_">+123 456 789</span></li>
 					</ul>
 				</div>
 				<div class="col-sm-8">
@@ -254,10 +245,22 @@
 		<h4 class="copyright">© 2017 TRAN THANH VU. <span class="hidden-phone">All rights reserved.</span></h4>
 	</div>
 	<!-- FANCY BOX -->
+	
 	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="fancybox/dist/jquery.fancybox.min.js"></script>
-	<script src="../src/data.js"></script>
-	<script src="./js/main.js"></script>
+	
+	<script src="../chooseTemplate.js"></script>
+	<script src="../data.js"></script>
+	<script src="../main.js"></script>
+	<script>
+		
+
+		
+	</script>
+	<script>
+		var template = ChooseTemplate(4);
+		RunCV();
+		</script>
 </body>
 
 </html>

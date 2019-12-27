@@ -4,7 +4,7 @@ let kinhghiems = data.DanhSachKinhNghiem;
 let kiNang = data.KyNang;
 let duAn = data.DanhSachDuAn;
 
-console.log(data);
+
 
 function RunCV() {
     renderThongTinCaNhan();
@@ -19,6 +19,9 @@ function renderThongTinCaNhan() {
     $("._HoTen_").html(` ${data.ThongTinCaNhan.HoTen}`);
     $("._Email_").html(` ${data.ThongTinCaNhan.Email}`);
     $("._SoDT_").html(` ${data.ThongTinCaNhan.SoDT}`);
+    console.log( $("#_Avatar_"))
+    $("._Avatar_ img").attr("src", data.ThongTinCaNhan.Avatar ? data.ThongTinCaNhan.Avatar : "../src/assets/user-default.png");
+
 }
 
 function renderMangXaHoi() {
@@ -93,7 +96,7 @@ function renderKiNang() {
     for (let val of arrNgonNguOK) {
         let sumText = ""
         for (let val2 of val.TrinhDo) {
-            sumText += `<li><p id="_TenKiNang_">${val2}</p></li>`
+            sumText += `<li style="width=150px;list-style-type:none" ><p id="_TenKiNang_">${val2}</p></li>`
         }
         sumNgoaiNgu += template.ngonNgu(val.Ten, sumText)
     }
@@ -127,8 +130,9 @@ function renderDuAn() {
 function customIframe(i, customContent) {
     $($("._LinkYoutube_")[i]).fancybox({
         afterShow: function() {
+            console.log("run here")
             $(".fancybox-content").css({ "width": "100%", "display": "flex", "overflow-y": "scroll", "height": "100vh" })
-            $(".fancybox-content iframe").css({ "width": "100%", "display": "flex" })
+            $(".fancybox-content iframe").css({ "width": "100% !importance", "display": "flex !importance" })
             $('.fancybox-content').append(customContent);
         }
     });

@@ -30,7 +30,6 @@ function kinhnghiem(TenCongTy, ChucVu, MoTa, ThoiGian, index) {
   console.log(ThoiGian)
   let beginTime = ThoiGian.slice()
   if (index % 2 == 0) {
-    console.log("true")
     return ` 
         <li class="ikk">
                     <div class="resume-img wow fadeInUp delay-04s animated">
@@ -48,7 +47,6 @@ function kinhnghiem(TenCongTy, ChucVu, MoTa, ThoiGian, index) {
                 </li> `
   }
   else {
-    console.log("fail")
     return `
         <li class="resume-inverted">
                     <div class="resume-img wow fadeInUp delay-04s animated">
@@ -218,7 +216,9 @@ function renderThongTinCaNhan() {
   $("._HoTen_").html(thongtinCaNhan.HoTen)
   $("._Email_").html(thongtinCaNhan.Email)
   $("._SoDT_").html(thongtinCaNhan.SoDT)
-  $("img-thumbnail").attr("src", thongtinCaNhan.Avatar ? thongtinCaNhan.Avatar : "../src/assets/user-default.png");
+  console.log($("._Avatar_"));
+  $("._Avatar_ img").attr("src", thongtinCaNhan.Avatar ? thongtinCaNhan.Avatar : "../src/assets/user-default.png");
+
 }
 
 function runCV03() {

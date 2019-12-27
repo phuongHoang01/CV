@@ -6,9 +6,8 @@ const data = {
         "Email": "truc@gmail.com",
         "HoTen": "nguyen truc",
         "SoDT": "0909015594",
-        "Avatar": "",
+        "Avatar": "https://img.freepik.com/free-vector/abstract-blue-violet-light-line-slash-dark-grey-blank-space-design-modern-futuristic-background_104237-144.jpg?size=626&ext=jpg",
         "Urls": "[{\"type\":\"FaceBook\",\"url\":\"facebook.com/nguyentruc\"},{\"type\":\"LinkedIn\",\"url\":\"linkedin.com/nguyentruc\"},{\"type\":\"GitHub\",\"url\":\"github.com/nguyentruc\"}]",
-        "ImageFile": ""
     },
     "KyNang": {
         "ThanhThao": [
@@ -73,7 +72,7 @@ const data = {
             "ViTri": "FrontEnd",
             "MoTa": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
             "KyNang": "Netcore,,.NetCore,,Angular 4,Bootstrap 4,SCSS,Javascript",
-            "LinkYoutube": "",
+            "LinkYoutube": "https://www.youtube.com/watch?v=JjMOtdhI7i4",
             "LinkHinhAnh": ""
         },
         {
