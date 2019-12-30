@@ -1,12 +1,12 @@
+
 var template = ChooseTemplate(1);
+
+
 //  Hoc Vấn
 let hocVan = data.DanhSachHocVan;
 for (let i = 0; i < hocVan.length; i++) {
     $("#_HocVan_").append(template.hocVan(hocVan[i].ThoiGian, hocVan[i].TenTruong, hocVan[i].MoTaHocVan, hocVan[i].ChuyenNganh, hocVan[i].GPA));
 }
-
-
-console.log(data)
 
 
 // Kinh Nghiem
@@ -69,8 +69,10 @@ for (let i = 0; i < arrNgonNgu.length; i++) {
         arrNgonNguOK.push(res);
     }
 }
-console.log(arrNgonNguOK)
+
+
 let sumNgoaiNgu = "";
+let j = 0;
 for (let val of arrNgonNguOK) {
     let sumText = ""
     let i = 0
@@ -79,22 +81,16 @@ for (let val of arrNgonNguOK) {
         i++
     }
     sumNgoaiNgu += `
-    <div style="margin-left:20px">
-        <p>${val.Ten}:</p>${sumText}
-    </div>
-    `
+        <div style="margin-left:20px">
+            <p>${val.Ten}:</p>${sumText}
+        </div>
+        `
 }
 $("#_KiNang_ .Languages").append(`<span>${sumNgoaiNgu}</span>`);
 
 for(let val of data.KyNangMem){
     $("#_KyNangMem_").append(template.kyNangMem(val));
 }
-
-
-
-
-
-
 
 // Thong tin
 
