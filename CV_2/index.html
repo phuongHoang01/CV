@@ -41,7 +41,10 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 	<!-- container -->
-	<div class="wrapper ">
+
+
+
+	<div class="wrapper">
 		<!---------- Sidebar Holder ---------->
 		<nav id="sidebar" class="animated fadeInLeft">
 			<div class="sidebar-header text-center">
@@ -124,6 +127,10 @@
 					</a>
 				</li>
 			</ul>
+
+			<div>
+				<button onclick="downloadPDF()">DOWNLOAD CV</button>
+			</div>
 		</nav>
 
 		<!---------- Page Content Holder ---------->
@@ -643,7 +650,6 @@
 	<!-- MIXITUP -->
 	<script src="js/mixitup.min.js"></script>
 	<!-- jQuery CDN -->
-	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 	<!-- jQuery Nicescroll CDN -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
 	<!-- FANCY BOX -->
@@ -651,16 +657,22 @@
 	<script src="fancybox/dist/jquery.fancybox.min.js"></script>
 	<!-- Bootstrap Js CDN -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<!-- My JS -->
 
+
+	<!-- My JS -->
 
 	<!-- Template -->
 	<script src="../chooseTemplate.js"></script>
 	<script src="../data.js"></script>
 	<script src="../main.js"></script>
+
 	<script>
 		var template = ChooseTemplate(2);
 		RunCV();
+		function downloadPDF(){
+			window.open("../CVoffline/srt-resume.html","_blank")
+			return true;
+		};
 	</script>
 
 

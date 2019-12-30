@@ -1,9 +1,12 @@
 
+
 let thongTinCaNhan = JSON.parse(data.ThongTinCaNhan.Urls);
 let hocVan = data.DanhSachHocVan;
 let kinhghiems = data.DanhSachKinhNghiem;
 let kiNang = data.KyNang;
 let duAn = data.DanhSachDuAn;
+
+
 
 function RunCV() {
     renderThongTinCaNhan();
