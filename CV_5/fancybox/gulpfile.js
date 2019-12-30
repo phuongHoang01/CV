@@ -10,7 +10,7 @@ var gulp = require('gulp'),
     replace = require('gulp-replace'),
     gutil = require('gulp-util');
 
-var pkg = require('./package.json.js');
+var pkg = require('./package.json.js.js');
 var banner = ['// ==================================================',
     '// fancyBox v${pkg.version}',
     '//',
